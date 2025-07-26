@@ -68,8 +68,6 @@
   /* border: 2px solid #CF00FF; */
   max-height: 60vh;
   margin-bottom: 24px;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
 }
 
 .custom-arrow {
@@ -120,6 +118,8 @@
   font-size: 0;
   width: 14px;
   height: 14px;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .slick-dots li button:before {
@@ -141,7 +141,7 @@
 }
 
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
 .glimpseback {
   padding: 60px 80px 60px 80px;
 }
@@ -167,7 +167,7 @@
     transform: translateY(-50%);
     display: flex;
   }
-  .glimpseback {
+    .glimpseback {
   padding: 60px 80px 60px 80px;
 }
 }
@@ -188,12 +188,12 @@
   bottom:0%;
   left: -15vh;
 }
-.glimpseback {
-  padding: 60px 80px 60px 80px;
-}
 .highball{
   top:0%;
   right: -20vh;
+}
+  .glimpseback {
+  padding: 60px 80px 60px 80px;
 }
 }
 @media (max-width: 768px) {
@@ -213,9 +213,6 @@
 .custom-arrow i{
     font-size: 1.4rem;
 }
-.glimpseback {
-  padding: 60px 80px 60px 80px;
-}
 }
 @media (max-width: 555px) {
     .glimpseback{
@@ -224,16 +221,10 @@
      .custom-arrows-wrapper {
     bottom: -40px;
   }
-  .glimpseback {
-  padding: 60px 80px 60px 80px;
-}
 }
 @media (max-width: 400px) {
     .slick-dots li button:before {
   width: 8px;
   height: 8px;
   }
-  .glimpseback {
-  padding: 60px 80px 60px 80px;
-}
 }
