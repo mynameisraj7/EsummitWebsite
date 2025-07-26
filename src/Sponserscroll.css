@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sponserimg {
+  background: var(--e-summit-purple-00, #100412);
+  padding: 60px 80px;
+}
+
+.sponsertitle h2 {
+  font-size: 48px;
+  color: var(--Neutrals-White, #FFF);
+  text-align: center;
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+.sponserline {
+  width: 147px;
+  height: 4px;
+  background: #CF00FF;
+  margin: 10px auto 0 auto;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  background: transparent;
+  padding-top: 30px;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-item img {
+  height: 90px;
+  width: 180px;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.33%);
+  }
+}
+
+@media (max-width: 768px) {
+
+    .sponsertitle h2{
+        font-size: 40px;
+    }
+    .sponserimg{
+        padding: 40px 60px;
+    }
+    .carousel-item img {
+        height: 80px;
+        width: 160px;
+    }
+}
+@media (max-width: 463px) {
+    .sponserimg{
+        padding: 30px 20px;
+    }
+}

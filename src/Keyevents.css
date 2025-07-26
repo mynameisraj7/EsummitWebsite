@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.keyback {
+  min-height: 100vh;
+  background-image: linear-gradient(
+      90deg,
+      rgba(16, 4, 18, 0.7) 0%,
+      #100412 30.29%,
+      #100412 70%,
+      rgba(16, 4, 18, 0.7) 100%
+    ),
+    url("/backgroundimage.jpeg");
+  background-size: contain;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.keytitle h2 {
+  color: var(--Neutrals-White, #FFF);
+  text-align: center;
+  font-family: "Overpass";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+.keyline {
+  width: 147px;
+  height: 4px;
+  background: #cf00ff;
+  margin: 10px auto 0 auto;
+}
+
+.fourcardcontainer {
+  display: flex;
+  width: 100%;
+  max-width: 1250px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-top: 60px;
+}
+
+/* ==== Flip Card Core Styles ==== */
+.smallcard {
+  width: 270px;
+  height: 390px;
+  perspective: 1000px;
+  cursor: pointer;
+  border-radius: 17.258px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.smallcard.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 17.258px;
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid #cf00ff;
+  padding: 8px 16px 16px 16px;
+}
+
+/* ==== Front Face ==== */
+.card-front {
+  background: #100412;
+}
+
+.card-front img {
+  width: 100%;
+  border-radius: 11.506px;
+  height: 290px;
+  object-fit: cover;
+  box-shadow: 0px 0px 5.753px 2.876px rgba(0, 0, 0, 0.12);
+}
+
+.card-front h2 {
+  color: var(--Neutrals-White, #fff);
+  font-family: "Overpass";
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 125%;
+  margin-top: 16px;
+  margin-left: 6px;
+  letter-spacing: 1.1px;
+}
+
+.card-front .smallcardtext {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.card-front .smallcardtext p {
+  color: var(--ESummit-Purple-700, #cf00ff);
+  font-family: "Proximasans";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 150%;
+  margin-left: 6px;
+}
+
+.card-front .smallcardtext a {
+  color: #f2ff00;
+  font-family: "Proximasans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+}
+
+/* ==== Back Face ==== */
+.card-back {
+  transform: rotateY(180deg);
+   background: #100412;
+  padding: 16px;
+}
+
+.card-back h2 {
+  color: white;
+  font-family: "Overpass";
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-style: normal;
+font-weight: 700;
+line-height: 150%; 
+}
+
+.card-back p {
+  font-family: "Proximasans";
+  font-size: 1rem;
+  color: #cf00ff;
+  font-style: normal;
+font-weight: 500;
+line-height: 150%; 
+  line-height: 1.6;
+}
+
+.outwhite{
+    display: flex;
+padding: 12px 48px;
+justify-content: center;
+align-items: center;
+background: transparent;
+font-family: "Roboto";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 125%; 
+color: #FFF;
+border-radius: 8px;
+border: 1.5px solid var(--Neutrals-White, #FFF);
+margin-top: auto;
+}
+
+.inwhite{
+    display: flex;
+padding: 12px 48px;
+justify-content: center;
+align-items: center;
+background: white;
+font-family: "Roboto";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 125%; 
+color: black;
+border-radius: 8px;
+border: 1.5px solid var(--Neutrals-White, #FFF);
+margin-top: 12px;
+}
+
+/* ==== Button Section ==== */
+.morecards {
+  color: #f2ff00;
+  font-family: "Proximanova";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: 4px;
+}
+
+.morecardscont {
+  width: 100%;
+  text-align: right;
+  margin-top: 44px;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 740px) {
+  .keyback {
+    padding: 40px 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .keytitle h2 {
+    font-size: 40px;
+  }
+
+  .card-front h2,
+  .card-back h2 {
+    font-size: 22px;
+  }
+
+  .card-back p {
+    font-size: 15px;
+  }
+}

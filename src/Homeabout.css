@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.abback{
+    background: var(--e-summit-purple-00, #100412);
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+}
+.abtitle h2{
+    font-size: 100px;
+    color: var(--Neutrals-White, #FFF);
+text-align: center;
+font-family: "Overpass";
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 125%; 
+z-index: 1;
+}
+.abline{
+    width: 147px;
+height: 4px;
+background: #CF00FF;
+margin: 10px auto 0 auto;
+}
+
+.ablowball{
+  position: absolute;
+  z-index: 0;
+  bottom:0%;
+  right: -20vh;
+}
+.abhighball{
+  position: absolute;
+  z-index: 0;
+  top:-1%;
+  left: -23vh;
+}
+
+
+.absection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 32px;
+}
+
+
+.abcont{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap:26px;
+}
+.ableft{
+    width:100%;
+    max-width: 640px;
+    margin-top: 48px;
+    z-index: 1;
+}
+.ableftup{
+    background: #1C0021;
+    width: 100%;
+    border-radius: 16px;
+    border: 1px dashed #CF00FF;
+    height: auto;
+    padding: 16px;
+    margin-bottom: 32px;
+}
+.ableftup h3{
+    color: var(--ESummit-Purple-700, #CF00FF);
+    font-family: "Overpass";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; 
+}
+.ableftup p{
+    padding-top: 10px;
+    color: var(--Neutrals-White, #FFF);
+font-family: "Proximasans";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; 
+}
+.ableftbel{
+    background: #1C0021;
+    width: 100%;
+    border-radius: 16px;
+    border: 1px dashed #CF00FF;
+    height: auto;
+    padding: 16px;
+}
+.ableftbel h3{
+    color: var(--ESummit-Purple-700, #CF00FF);
+    font-family: "Overpass";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; 
+}
+.ableftbel p{
+    padding-top: 10px;
+    color: var(--Neutrals-White, #FFF);
+font-family: "Proximasans";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%;
+}
+.abright{
+    width: 100%;
+    max-width: 640px;
+    margin-top: 52px;
+    background: #000;
+    order:2;
+    z-index: 1;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; 
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  border: none;
+}
+
+.ablower{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap:24px;
+    order:1;
+    z-index: 1;
+}
+.abox{
+    display: flex;
+    width: 300px;
+height: 162px;
+padding: 16px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 16px;
+border: 1px dashed #CF00FF;
+background: #1C0021;
+}
+.abox h2{
+    color: var(--ESummit-Purple-700, #CF00FF);
+
+font-family: "Overpass";
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 125%; 
+}
+.abox p{
+    color: var(--Neutrals-White, #FFF);
+    text-align: center;
+
+font-family: "Proximasans";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; 
+}
+
+@media (max-width: 1050px) {
+    .absection{
+        gap:0;
+    }
+  .abcont {
+    display: contents; 
+  }
+
+  .ableft {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .ablower {
+    order: 1;
+    justify-content: center;
+    margin-top: 32px;
+    height: auto;
+  }
+
+  .abright {
+    order: 2;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 32px;
+  }
+
+  .abox h2 {
+    font-size: 36px;
+  }
+
+  .abox p {
+    font-size: 18px;
+  }
+  .video-container{
+    padding-bottom: 52%;
+  }
+}
+
+@media (max-width: 900px) {
+     .ablower {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap:24px;
+        width: 100%;
+     }
+   .abox {
+    flex: 1 1 calc(50% - 12px); /* Two per row, keeps spacing */
+    min-width: 0;             
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 720px) {
+      .abhighball{
+  top:-2%;
+  left: -30vh;
+}
+}
+@media (max-width: 535px) {
+     .abtitle h2{
+      font-size: 40px;
+     }
+    .abback{
+    padding: 40px 24px;
+    }
+    .ableftup p{
+      font-size: 16px;
+}
+.abox{
+  font-size: 16px;
+}
+.abhighball{
+  top:2%;
+  left: -28vh;
+}
+}

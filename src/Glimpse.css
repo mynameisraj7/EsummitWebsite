@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.glimpseback {
+  background: var(--e-summit-purple-00, #100412);
+  padding: 60px 80px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.glimtitle h2 {
+  color: var(--Neutrals-White, #FFF);
+  text-align: center;
+  font-family: "Overpass";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+.glimline {
+  width: 147px;
+  height: 4px;
+  background: #CF00FF;
+  margin: 10px auto 0 auto;
+}
+.lowball{
+  position: absolute;
+  z-index: 0;
+  bottom:0%;
+  left: 0vh;
+}
+.highball{
+  position: absolute;
+  z-index: 0;
+  top:0%;
+  right: 7vh;
+}
+
+.carousel-wwrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+}
+
+.carousel-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  opacity: 0.85;
+  /* border: 2px solid #CF00FF; */
+  max-height: 60vh;
+  margin-bottom: 24px;
+}
+
+.custom-arrow {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #CF00FF;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #CF00FF ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 3;
+}
+
+.custom-arrow i {
+  pointer-events: none;
+}
+
+.custom-arrows-wrapper {
+  display: flex !important;
+  gap: 10px;
+}
+
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  bottom: -30px;
+}
+
+.slick-dots li {
+  list-style: none;
+  font-size: 0;
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  background: none;
+  border: none;
+  padding: 0;
+  outline: none;
+  font-size: 0;
+  width: 14px;
+  height: 14px;
+}
+
+.slick-dots li button:before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: transparent;
+  border: 2px solid #CF00FF;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  background-clip: padding-box;
+}
+
+.slick-dots li.slick-active button:before {
+  background-color: #CF00FF;
+  transform: scale(1.1);
+}
+
+@media (min-width: 1000px) {
+  .custom-arrows-wrapper {
+    display: none;
+  }
+
+  .custom-arrow.prev {
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    transform: translateY(-50%);
+    display: flex;
+  }
+
+  .custom-arrow.next {
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    transform: translateY(-50%);
+    display: flex;
+  }
+}
+
+@media (max-width: 999px) {
+  .custom-arrows-wrapper {
+    display: flex;
+    position: absolute;
+    bottom: -40px;
+    right: 10px;
+  }
+
+  .custom-arrow {
+    position: static;
+    transform: none;
+  }
+  .lowball{
+  bottom:0%;
+  left: -15vh;
+}
+.highball{
+  top:0%;
+  right: -20vh;
+}
+}
+@media (max-width: 768px) {
+    .glimtitle h2 {
+        font-size: 40px;
+    }
+
+  .slick-dots li button:before {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #CF00FF;
+  }
+  .custom-arrow {
+  width: 34px;
+  height: 34px;
+}
+.custom-arrow i{
+    font-size: 1.4rem;
+}
+}
+@media (max-width: 555px) {
+    .glimpseback{
+        padding: 40px 20px 90px 20px;
+    }
+     .custom-arrows-wrapper {
+    bottom: -40px;
+  }
+}
+@media (max-width: 400px) {
+    .slick-dots li button:before {
+  width: 8px;
+  height: 8px;
+  }
+}
