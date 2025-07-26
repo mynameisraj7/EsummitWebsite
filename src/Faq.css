@@ -34,6 +34,8 @@ margin: 10px auto 0 auto;
   margin: 64px auto;
   font-family: "Overpass";
   color: #fff;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .faq-item { 
@@ -44,6 +46,8 @@ margin: 10px auto 0 auto;
   background: #1A011F;
   user-select: none;       
   outline: none;    
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 
@@ -59,6 +63,8 @@ margin: 10px auto 0 auto;
   align-items: center;
   transition: color 0.3s;
   gap:30px;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .faq-question:hover {
@@ -71,6 +77,8 @@ margin: 10px auto 0 auto;
   font-family: "Proximasans";
   color: #ccc;
   line-height: 1.5;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 @media(max-width: 850px){
     .faq-list{

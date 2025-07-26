@@ -58,6 +58,8 @@
   perspective: 1000px;
   cursor: pointer;
   border-radius: 17.258px;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .card-inner {
@@ -98,6 +100,8 @@
   height: 290px;
   object-fit: cover;
   box-shadow: 0px 0px 5.753px 2.876px rgba(0, 0, 0, 0.12);
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .card-front h2 {
@@ -109,6 +113,8 @@
   margin-top: 16px;
   margin-left: 6px;
   letter-spacing: 1.1px;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .card-front .smallcardtext {
@@ -127,6 +133,8 @@
   font-weight: 500;
   line-height: 150%;
   margin-left: 6px;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .card-front .smallcardtext a {
@@ -140,6 +148,8 @@
   text-decoration-style: solid;
   text-decoration-skip-ink: auto;
   text-decoration-thickness: auto;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* ==== Back Face ==== */
@@ -157,6 +167,8 @@
   font-style: normal;
 font-weight: 700;
 line-height: 150%; 
+user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .card-back p {
@@ -167,6 +179,8 @@ line-height: 150%;
 font-weight: 500;
 line-height: 150%; 
   line-height: 1.6;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .outwhite{
@@ -184,6 +198,8 @@ color: #FFF;
 border-radius: 8px;
 border: 1.5px solid var(--Neutrals-White, #FFF);
 margin-top: auto;
+user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .inwhite{
@@ -201,6 +217,8 @@ color: black;
 border-radius: 8px;
 border: 1.5px solid var(--Neutrals-White, #FFF);
 margin-top: 12px;
+user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* ==== Button Section ==== */
@@ -216,12 +234,16 @@ margin-top: 12px;
   text-decoration-skip-ink: auto;
   text-decoration-thickness: auto;
   text-underline-offset: 4px;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .morecardscont {
   width: 100%;
   text-align: right;
   margin-top: 44px;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* ==== Responsive ==== */

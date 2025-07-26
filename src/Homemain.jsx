@@ -68,8 +68,9 @@ function Homemain() {
         </div>
 
         <video autoPlay muted loop className="bg-video">
-          <source src={backvideo} type="video/mp4" />
+              <source src={backvideo} type="video/mp4" />
         </video>
+
 
         <img className="centericon" src={iconnectlogo} alt="footer image" />
         <h4>Presents</h4>

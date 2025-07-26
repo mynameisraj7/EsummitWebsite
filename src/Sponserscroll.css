@@ -31,6 +31,8 @@
   width: 100%;
   background: transparent;
   padding-top: 30px;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .carousel-track {
@@ -44,6 +46,8 @@
   padding: 0 30px;
   display: flex;
   align-items: center;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .carousel-item img {
@@ -51,6 +55,8 @@
   width: 180px;
   opacity: 0.8;
   transition: transform 0.3s ease, opacity 0.3s ease;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .carousel-item img:hover {

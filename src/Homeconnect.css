@@ -79,6 +79,8 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: 125%; /* 17.5px */
+user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .frame2 div{
@@ -101,6 +103,8 @@ padding: 12px;
 color: var(--ESummit-Purple-700, #9A13BC);
 resize: none;
 height: 85px;
+user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .frame2 textarea::placeholder{
     color: var(--ESummit-Purple-700, #9A13BC);
@@ -127,6 +131,8 @@ padding: 12px 48px;
     align-items: center;
     justify-content: center;
     transition: color 0.3s;
+    user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .contbutton:hover{
     color: var(--ESummit-Purple-700, #9A13BC);
@@ -203,6 +209,8 @@ line-height: 125%; /* 30px */
 }
 .reachmap iframe{
     border-radius: 16px;
+    user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 @media (max-width: 920px){
