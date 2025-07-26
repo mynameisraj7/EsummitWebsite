@@ -109,12 +109,13 @@ line-height: 150%; /* 24px */
 }
 
 .phonecont p{
+    margin: 0;
     color: var(--Neutrals-Black-500, #CCC);
-font-size: 14px;
+font-size: 15px;
 font-style: normal;
-font-family: "Proximasans";
+font-family: "Overpass";
 font-weight: 500;
-line-height: 150%; 
+line-height: 1; 
 user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -230,7 +231,8 @@ line-height: 150%; /* 24px */
         font-size: 0.9rem;
     }
     .phonecont p{
-        font-size: 0.9rem;
+        font-size: 14px;
+        font-weight: 400;
     }
     .address{
         margin-top: 48px;
