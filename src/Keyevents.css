@@ -317,3 +317,14 @@ user-select: none;
     padding: 60px 10px;
   }
 }
+@media (max-width: 360px) {
+  .keyback{
+    padding: 60px 10px;
+  }
+  .smallcard .card-front h2{
+    font-size: 17px;   
+  }
+  .smallcard .card-back h2{
+    font-size: 17px;   
+  }
+}
