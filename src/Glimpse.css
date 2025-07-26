@@ -62,7 +62,7 @@
   width: 100%;
   max-width: 100%;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 12px;
   opacity: 0.85;
   /* border: 2px solid #CF00FF; */

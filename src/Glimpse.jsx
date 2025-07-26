@@ -2,13 +2,13 @@ import "./Glimpse.css";
 import "slick-carousel/slick/slick.css";
 import Slider from "react-slick";
 
-import logo1 from "./assets/sponimg1.png";
-import logo2 from "./assets/sponimg1.png";
-import logo3 from "./assets/sponimg1.png";
-import logo4 from "./assets/sponimg1.png";
-import logo5 from "./assets/sponimg1.png";
-import logo6 from "./assets/sponimg1.png";
-import logo7 from "./assets/sponimg1.png";
+import logo1 from "./assets/glimpse1.JPG";
+import logo2 from "./assets/glimpse2.JPG";
+import logo3 from "./assets/glimpse3.JPG";
+import logo4 from "./assets/glimpse4.JPG";
+import logo5 from "./assets/glimpse5.JPG";
+import logo6 from "./assets/glimpse6.JPG";
+import logo7 from "./assets/glimpse7.JPG";
 import lowball from "./assets/purpleball.png"
 import highball from "./assets/purpleballhigh.png"
 import { useEffect } from "react";
