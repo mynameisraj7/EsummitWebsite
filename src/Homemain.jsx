@@ -11,6 +11,17 @@ function Homemain() {
   const [navOpen, setNavOpen] = useState(false);
   const location = useLocation();
 
+  const openGoogleCalendar = () => {
+  const start = "20250828";
+  const end = "20250830";
+  const title = encodeURIComponent("E-Summit 2025");
+  const details = encodeURIComponent("Haryana’s biggest Entrepreneurship Summit, hosted by iConnect at GJUS&T Hisar.");
+  const location = encodeURIComponent("GJUS&T, Hisar, Haryana");
+  
+  const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${start}/${end}&details=${details}&location=${location}`;
+  window.open(url, "_blank");
+};
+
   const handleScrollLink = (e, targetId) => {
     e.preventDefault();
     const el = document.getElementById(targetId);
@@ -87,7 +98,7 @@ function Homemain() {
           Presents Haryana's Biggest Entrepreneurship Summit is here! Transform your Perception into exceptional <span>Performance.</span>
         </p>
         <h2>27th - 29th August 2025</h2>
-        <button>Save the Date</button>
+        <button onClick={openGoogleCalendar}>Save the Date</button>
 
         <div className="ssocials">
           <a href="https://www.instagram.com/iconnectgjust/"><i className='bx bxl-instagram'></i></a>
