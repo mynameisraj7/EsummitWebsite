@@ -312,3 +312,8 @@ user-select: none;
     height: 212.5px;
   }
 }
+@media (max-width: 400px) {
+  .keyback{
+    padding: 60px 10px;
+  }
+}
