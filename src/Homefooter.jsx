@@ -2,28 +2,15 @@ import "./Homefooter.css";
 import iconnectlogo from "./assets/esumiconlogo.png";
 import esummitlogo from "./assets/esummitlogo.png";
 import whiteline from "./assets/whiteline.png";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 
 function Homefooter() {
-
-  useEffect(() => {
-  AOS.init({
-    duration: 1000,
-    once: true,
-    mirror: true,
-  });
-}, []);
-
-
   return (
     <>
       <section className="footerblack">
           <div className="footcontainer">
             <div className="foottop">
-            <div className="footleft" data-aos="fade-right">
+            <div className="footleft">
             <div className="imgcontent">
               <img src={esummitlogo} alt="footer image" />
               <img src={whiteline} alt="footer image" />
@@ -36,13 +23,13 @@ function Homefooter() {
             </div>
             
             </div>
-            <div className="address" data-aos="fade-up">
+            <div className="address">
                 <h2>Address</h2>
                 <p>iConnect Office, PDUIIC building,<br/>
                     GJUS&T, Hisar,<br/>
                     Haryana - 125001</p>
             </div>
-            <div className="footright" data-aos="fade-left">
+            <div className="footright">
               <div className="footcontact">
                 <h2>Contact</h2>
                 <div className="contactcontent">
@@ -89,8 +76,8 @@ function Homefooter() {
               </div>
             </div>
             </div>
-            <div className="divider" data-aos="zoom-in"></div>
-            <div className="footbottom" data-aos="fade-up">
+            <div className="divider"></div>
+            <div className="footbottom">
               <div>Build️ with ❤️ by Team iConnect</div>
               <div>© Team iConnect, PDUIIC, GJUS&T, Hisar. All Rights Reserved</div>
             </div>
