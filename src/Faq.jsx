@@ -70,7 +70,7 @@ function Faq() {
       </div>
       <div className="faq-list">
         {questions.map((item, index) => (
-          <div key={index} className="faq-item"  data-aos="fade-up" data-aos-delay={index * 100}>
+          <div key={index} className="faq-item"  data-aos="fade-down" data-aos-delay={index * 100}>
             <div className="faq-question" onClick={() => toggleAnswer(index)}>
               {item.question} <i className='bx bx-chevron-down'></i>
             </div>
