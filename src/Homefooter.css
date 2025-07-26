@@ -89,6 +89,7 @@ line-height: 150%; /* 24px */
 
 .phonecont{
     display: flex;
+    align-items: center;
     margin-bottom: 8px;
     gap:12px;
 }
@@ -104,7 +105,7 @@ line-height: 150%; /* 24px */
 font-size: 14px;
 font-style: normal;
 font-family: "Proximasans";
-margin-top: 5px;
+margin-top: 7px;
 font-weight: 500;
 line-height: 150%; 
 }
@@ -221,6 +222,7 @@ line-height: 150%; /* 24px */
     }
     .phonecont p{
         font-size: 0.9rem;
+        margin-top: 9px;
     }
     .address{
         margin-top: 48px;
