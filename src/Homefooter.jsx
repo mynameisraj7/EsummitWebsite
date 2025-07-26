@@ -12,7 +12,7 @@ function Homefooter() {
   useEffect(() => {
   AOS.init({
     duration: 1000,
-    once: false,
+    once: true,
     mirror: true,
   });
 }, []);
