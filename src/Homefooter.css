@@ -113,7 +113,6 @@ line-height: 150%; /* 24px */
 font-size: 14px;
 font-style: normal;
 font-family: "Proximasans";
-margin-top: 7px;
 font-weight: 500;
 line-height: 150%; 
 user-select: none;
@@ -232,7 +231,6 @@ line-height: 150%; /* 24px */
     }
     .phonecont p{
         font-size: 0.9rem;
-        margin-top: 9px;
     }
     .address{
         margin-top: 48px;
