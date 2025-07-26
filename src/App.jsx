@@ -7,7 +7,7 @@ import Keyevents from './Keyevents';
 import Glimpse from './Glimpse';
 import Sponserscroll from './Sponserscroll';
 import Homeconnect from './Homeconnect';
-import Faq from './faq';
+import Faq from './Faq';
 import Homefooter from './Homefooter';
 
 function App() {
