@@ -34,7 +34,7 @@ function Homemain() {
         <div className="header">
           <div className="glasscontainer">
             <div className='logo'>
-              <img src={esummitlogo} alt="iConnect Logo" height="45px" width="230px" />
+              <img src={esummitlogo} height="45px" width="230px" />
               <div id="mobile" onClick={() => setNavOpen(!navOpen)}>
               <i className='bx bx-menu'></i>
             </div>
