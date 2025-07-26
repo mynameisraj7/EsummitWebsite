@@ -55,7 +55,7 @@ function Keyevents() {
                   Inviting students to bring forth impactful solutions to real-world problems, pitch them like entrepreneurs, and battle it out for recognition, rewards, and a chance to shine in front of seasoned experts.
                 </p>
                 <button className="outwhite">Rule Book</button>
-                <button className="inwhite">Regiser Now</button>
+                <button className="inwhite">Regitser Now</button>
               </div>
             </div>
           </div>

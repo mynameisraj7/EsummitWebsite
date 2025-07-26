@@ -11,6 +11,9 @@ function Homemain() {
   const [navOpen, setNavOpen] = useState(false);
   const location = useLocation();
 
+  const [logoTimestamp] = useState(Date.now());
+
+
   const openGoogleCalendar = () => {
   const start = "20250828";
   const end = "20250830";
@@ -87,11 +90,11 @@ function Homemain() {
         <h4>Presents</h4>
 
         <div className="mainlogocrop">
-          <img className="mainlogo" src={`${whitelogo}?t=${Date.now()}`} alt="main gif" />
+          <img className="mainlogo" src={`${whitelogo}?t=${logoTimestamp}`} alt="main gif" />
         </div>
 
         <div className="mainlogomobilecrop">
-          <img className="mainlogomobile" src={`${mainlogomobile}?t=${Date.now()}`} alt="mobile gif" />
+          <img className="mainlogomobile" src={`${mainlogomobile}?t=${logoTimestamp}`} alt="mobile gif" />
         </div>
 
         <p>
