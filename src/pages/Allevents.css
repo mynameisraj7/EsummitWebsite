@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.keyback {
+.kkeyback {
   background-image: linear-gradient(
       90deg,
       rgba(16, 4, 18, 0.7) 0%,
@@ -21,7 +21,7 @@
   position: relative;
 }
 
-.keytitle h2 {
+.kkeytitle h2 {
   color: var(--Neutrals-White, #FFF);
   text-align: center;
   font-family: "Overpass";
@@ -29,16 +29,16 @@
   font-style: normal;
   font-weight: 700;
   line-height: 125%;
+  margin-top: 140px;
 }
 
-.keyline {
+.kkeyline {
   width: 147px;
   height: 4px;
   background: #cf00ff;
   margin: 10px auto 0 auto;
 }
-
-.fourcardcontainer {
+.ffourcardcontainer {
   display: flex;
   width: 100%;
   max-width: 1250px;
@@ -51,7 +51,7 @@
 }
 
 /* ==== Flip Card Core Styles ==== */
-.smallcard {
+.ssmallcard {
   width: 270px;
   height: 390px;
   perspective: 1000px;
@@ -60,7 +60,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-.card-inner {
+.ccard-inner {
   position: relative;
   width: 100%;
   height: 100%;
@@ -68,12 +68,12 @@
   transform-style: preserve-3d;
 }
 
-.smallcard.flipped .card-inner {
+.ssmallcard.flipped .ccard-inner {
   transform: rotateY(180deg);
 }
 
-.card-front,
-.card-back {
+.ccard-front,
+.ccard-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -88,11 +88,11 @@
 }
 
 /* ==== Front Face ==== */
-.card-front {
+.ccard-front {
   background: #100412;
 }
 
-.card-front img {
+.ccard-front img {
   width: 100%;
   border-radius: 11.506px;
   height: 290px;
@@ -102,7 +102,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-.card-front h2 {
+.ccard-front h2 {
   color: var(--Neutrals-White, #fff);
   font-family: "Overpass";
   font-size: 1.5rem;
@@ -113,7 +113,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-.card-front .smallcardtext {
+.ccard-front .ssmallcardtext {
   width: 100%;
   display: flex;
   align-items: center;
@@ -122,7 +122,7 @@
   margin-top: 10px;
 }
 
-.card-front .smallcardtext p {
+.ccard-front .ssmallcardtext p {
   color: var(--ESummit-Purple-700, #cf00ff);
   font-family: "Proximasans";
   font-size: 1rem;
@@ -132,7 +132,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-.card-front .smallcardtext a {
+.ccard-front .ssmallcardtext a {
   color: #f2ff00;
   font-family: "Proximasans";
   font-size: 14px;
@@ -148,12 +148,12 @@
 }
 
 /* ==== Back Face ==== */
-.card-back {
+.ccard-back {
   transform: rotateY(180deg);
    background: #100412;
 }
 
-.card-back h2 {
+.ccard-back h2 {
   color: white;
   font-family: "Overpass";
   font-size: 1.5rem;
@@ -165,7 +165,7 @@ user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
 
-.card-back p {
+.ccard-back p {
   font-family: "Proximasans";
   font-size: 1rem;
   color: #cf00ff;
@@ -177,7 +177,7 @@ line-height: 150%;
   -webkit-tap-highlight-color: transparent;
 }
 
-.outwhite{
+.ooutwhite{
     display: flex;
 padding: 12px 48px;
 justify-content: center;
@@ -196,7 +196,7 @@ user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
 
-.inwhite{
+.iinwhite{
     display: flex;
 padding: 12px 48px;
 justify-content: center;
@@ -215,115 +215,91 @@ user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
 
-/* ==== Button Section ==== */
-.morecards {
-  color: #f2ff00;
-  font-family: "Proximanova";
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-skip-ink: auto;
-  text-decoration-thickness: auto;
-  text-underline-offset: 4px;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.morecardscont {
-  width: 100%;
-  text-align: right;
-  margin-top: 44px;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
-}
 
 /* ==== Responsive ==== */
 @media (max-width: 740px) {
-  .keyback {
+  .kkeyback {
     padding: 40px 24px;
   }
 }
 @media (max-width: 630px) {
-  .smallcard {
+  .ssmallcard {
     flex: 1 1 calc(50% - 20px); /* Reduce gap slightly for smaller screens */
   }
 }
 
 @media (max-width: 600px) {
-  .keytitle h2 {
+  .kkeytitle h2 {
     font-size: 40px;
   }
-  .smallcard .card-front h2{
+  .ssmallcard .ccard-front h2{
     font-size: 18px;   
     margin-top: 12px; 
   }
-  .smallcard .card-back h2{
+  .ssmallcard .ccard-back h2{
     font-size: 18px;   
   }
 
-  .card-front h2,
-  .card-back h2 {
+  .ccard-front h2,
+  .ccard-back h2 {
     font-size: 22px;
   }
 
-  .card-back p {
+  .ccard-back p {
     font-size: 15px;
   }
-  .card-front .smallcardtext {
+  .ccard-front .ssmallcardtext {
     flex-direction: column;
     gap:0;
     margin-top: 8px;
   }
-  .card-front .smallcardtext p{
+  .ccard-front .ssmallcardtext p{
     margin-right: auto;
   }
-  .card-front .smallcardtext a{
+  .ccard-front .ssmallcardtext a{
     margin-left: auto;
   }
-  .card-front,.card-back{
+  .ccard-front,.ccard-back{
     min-height: 100%;
   }
-  .keyback {
+  .kkeyback {
     padding: 60px 20px 60px 20px;
   }
 }
 @media (max-width: 550px) {
-    .smallcard {
+    .ssmallcard {
   width: 186px;
   height: 325.5px;
 }
-.card-back p {
+.ccard-back p {
     font-size: 12px;
   }
-  .outwhite{
+  .ooutwhite{
     padding: 7px 0px;
   }
-  .inwhite{
+  .iinwhite{
     padding: 7px 0px;
   }
-  .fourcardcontainer {
+  .ffourcardcontainer {
   gap: 15px;
   }
-  .card-front img {
+  .ccard-front img {
     height: 212.5px;
   }
 }
 @media (max-width: 400px) {
-  .keyback{
+  .kkeyback{
     padding: 60px 10px;
   }
 }
 @media (max-width: 360px) {
-  .keyback{
+  .kkeyback{
     padding: 60px 10px;
   }
-  .smallcard .card-front h2{
+  .ssmallcard .ccard-front h2{
     font-size: 17px;   
   }
-  .smallcard .card-back h2{
+  .ssmallcard .ccard-back h2{
     font-size: 17px;   
   }
 }

@@ -478,6 +478,10 @@ line-height: 125%;
 .header{
     padding: 30px 20px 0px 20px;
 }
+.logo img{
+    width:190px;
+    height: 40px;
+  }
 }
 @media(max-width:440px){
   .header{
@@ -492,8 +496,8 @@ line-height: 125%;
     height: 280px;
   }
   .logo img{
-    width:160px;
-    height: 35px;
+    width:155px;
+    height: 32px;
   }
   .centericon{
     margin-top: 70px;

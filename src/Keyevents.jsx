@@ -3,6 +3,7 @@ import keyimage from "./assets/keyeventimage.png";
 import { useEffect,useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from 'react-router-dom';
 
 
 function Keyevents() {
@@ -26,6 +27,35 @@ function Keyevents() {
     );
   };
 
+
+  const events = [
+  {
+    title: "Startup Spotlight",
+    date: "28th August 2025",
+    ruleBookLink: "https://example.com/rulebook1.pdf",
+    registerLink: "https://lu.ma/event/evt-5CxCjcLVGb938PV",
+  },
+  {
+    title: "Ideathon",
+    date: "29th August 2025",
+    ruleBookLink: "https://example.com/rulebook2.pdf",
+    registerLink: "https://lu.ma/event/evt-Abc123",
+  },
+  {
+    title: "Pitch Parade",
+    date: "30th August 2025",
+    ruleBookLink: "https://example.com/rulebook3.pdf",
+    registerLink: "https://lu.ma/event/evt-Def456",
+  },
+  {
+    title: "Tech Expo",
+    date: "31st August 2025",
+    ruleBookLink: "https://example.com/rulebook4.pdf",
+    registerLink: "https://lu.ma/event/evt-Ghi789",
+  },
+];
+
+
   return (
     <section id="events" className="keyback">
       <div className="keytitle" data-aos="fade-down">
@@ -34,7 +64,7 @@ function Keyevents() {
       </div>
 
       <div className="fourcardcontainer" data-aos="fade-right">
-        {[1, 2, 3, 4].map((_, index) => (
+        {events.map((event, index) => (
           <div
             key={index}
             className={`smallcard ${flippedIndexes.includes(index) ? "flipped" : ""}`}
@@ -43,19 +73,19 @@ function Keyevents() {
             <div className="card-inner">
               <div className="card-front">
                 <img src={keyimage} loading="lazy" />
-                <h2>Startup Spotlight</h2>
+                <h2>{event.title}</h2>
                 <div className="smallcardtext">
-                  <p>28th August 2025</p>
-                  <a href="">Know More</a>
+                  <p>{event.date}</p>
+                  <a href={event.registerLink} target="_blank" rel="noopener noreferrer">Know More</a>
                 </div>
               </div>
               <div className="card-back">
-                <h2>Startup Spotlight</h2>
+                <h2>{event.title}</h2>
                 <p>
                   Inviting students to bring forth impactful solutions to real-world problems, pitch them like entrepreneurs, and battle it out for recognition, rewards, and a chance to shine in front of seasoned experts.
                 </p>
-                <button className="outwhite">Rule Book</button>
-                <button className="inwhite">Regitser Now</button>
+                <a href={event.ruleBookLink} className="outwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
+                <a href={event.registerLink} className="inwhite" target="_blank" rel="noopener noreferrer">Register Now</a>
               </div>
             </div>
           </div>
@@ -63,7 +93,8 @@ function Keyevents() {
       </div>
 
       <div className="morecardscont" data-aos="fade-up">
-        <a href="" className="morecards">View More Events</a>
+        <Link to="/more-events" className="morecards">View More Events</Link>
+
       </div>
     </section>
   );

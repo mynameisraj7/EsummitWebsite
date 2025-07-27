@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
-
 import Homemain from './Homemain';
 import Homeabout from './Homeabout';
 import Keyevents from './Keyevents';
@@ -9,6 +8,7 @@ import Sponserscroll from './Sponserscroll';
 import Homeconnect from './Homeconnect';
 import Faq from './Faq';
 import Homefooter from './Homefooter';
+import Moreevents from './pages/Moreevents';
 
 function App() {
   const location = useLocation();
@@ -41,6 +41,7 @@ function App() {
             <Homefooter />
           </>
         } />
+        <Route path="/more-events" element={<Moreevents />} />
       </Routes>
     </>
   );
