@@ -138,6 +138,7 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
+  cursor: pointer;
   line-height: 150%;
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -238,6 +239,9 @@ user-select: none;
   margin-top: 44px;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
+}
+.card-back a{
+  text-decoration: none;
 }
 
 /* ==== Responsive ==== */

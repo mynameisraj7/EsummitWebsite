@@ -10,7 +10,7 @@ function Keyevents() {
 
   useEffect(() => {
   AOS.init({
-    duration: 1000,
+    duration: 800,
     once: false,   // animations repeat when scrolled back
     mirror: true,  // animate on scroll up too
   });
@@ -76,7 +76,7 @@ function Keyevents() {
                 <h2>{event.title}</h2>
                 <div className="smallcardtext">
                   <p>{event.date}</p>
-                  <a href={event.registerLink} target="_blank" rel="noopener noreferrer">Know More</a>
+                  <a>Know More</a>
                 </div>
               </div>
               <div className="card-back">

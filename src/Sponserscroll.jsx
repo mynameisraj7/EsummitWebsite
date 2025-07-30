@@ -16,7 +16,7 @@ function Sponserscroll() {
 
   useEffect(() => {
   AOS.init({
-    duration: 1000,
+    duration: 800,
     once: false,   // allow repeat on scroll
     mirror: true,  // animate again on scroll up
   });
