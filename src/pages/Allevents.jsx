@@ -35,15 +35,25 @@ function Allevents() {
   };
     
     
-      const [flippedIndexes, setFlippedIndexes] = useState([]);
-    
-      const toggleFlip = (index) => {
-        setFlippedIndexes((prev) =>
-          prev.includes(index)
-            ? prev.filter((i) => i !== index)
-            : [...prev, index]
-        );
-      };
+      const [flippedIndexesRow1, setFlippedIndexesRow1] = useState([]);
+const [flippedIndexesRow2, setFlippedIndexesRow2] = useState([]);
+
+const toggleFlipRow1 = (index) => {
+  setFlippedIndexesRow1((prev) =>
+    prev.includes(index)
+      ? prev.filter((i) => i !== index)
+      : [...prev, index]
+  );
+};
+
+const toggleFlipRow2 = (index) => {
+  setFlippedIndexesRow2((prev) =>
+    prev.includes(index)
+      ? prev.filter((i) => i !== index)
+      : [...prev, index]
+  );
+};
+
     
     
       const events = [
@@ -152,8 +162,8 @@ function Allevents() {
         {events.map((event, index) => (
           <div
             key={index}
-            className={`ssmallcard ${flippedIndexes.includes(index) ? "flipped" : ""}`}
-            onClick={() => toggleFlip(index)}
+            className={`ssmallcard ${flippedIndexesRow1.includes(index) ? "flipped" : ""}`}
+            onClick={() => toggleFlipRow1(index)}
           >
             <div className="ccard-inner">
               <div className="ccard-front">
@@ -161,7 +171,7 @@ function Allevents() {
                 <h2>{event.title}</h2>
                 <div className="ssmallcardtext">
                   <p>{event.date}</p>
-                  <a href={event.registerLink} target="_blank" rel="noopener noreferrer">Know More</a>
+                  <a>Know More</a>
                 </div>
               </div>
               <div className="ccard-back">
@@ -181,8 +191,8 @@ function Allevents() {
         {events2.map((event, index) => (
           <div
             key={index}
-            className={`ssmallcard ${flippedIndexes.includes(index) ? "flipped" : ""}`}
-            onClick={() => toggleFlip(index)}
+            className={`ssmallcard ${flippedIndexesRow2.includes(index) ? "flipped" : ""}`}
+            onClick={() => toggleFlipRow2(index)}
           >
             <div className="ccard-inner">
               <div className="ccard-front">
@@ -190,7 +200,7 @@ function Allevents() {
                 <h2>{event.title}</h2>
                 <div className="ssmallcardtext">
                   <p>{event.date}</p>
-                  <a href={event.registerLink} target="_blank" rel="noopener noreferrer">Know More</a>
+                  <a>Know More</a>
                 </div>
               </div>
               <div className="ccard-back">

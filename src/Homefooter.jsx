@@ -39,30 +39,30 @@ function Homefooter() {
                      <i class='bx bx-phone'></i>
                      <p>+91 7011964796 (Yuvansh)</p>
                   </div>
-                   <div className="phonecont">
+                   {/* <div className="phonecont">
                      <i class='bx bx-phone'></i>
                      <p>+91 7011964796 (Yuvansh)</p>
-                  </div>
+                  </div> */}
                   <h3>For Event queries</h3> 
                  <div className="phonecont">
                      <i class='bx bx-phone'></i>
                      <p>+91 9813709139 (Vansh)</p>
                   </div>
-                   <div className="phonecont">
+                   {/* <div className="phonecont">
                      <i class='bx bx-phone'></i>
                      <p>+91 9813709139 (Vansh)</p>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="conright">
                    <h3>For other queries</h3>
                   <div className="phonecont">
                      <i class='bx bx-phone'></i>
-                     <p>+91 9467905906 (Naina)</p>
+                     <p>+91 9467905906</p>
                   </div>
-                   <div className="phonecont">
+                   {/* <div className="phonecont">
                      <i class='bx bx-phone'></i>
                      <p>+91 9467905906 (Naina)</p>
-                  </div>
+                  </div> */}
                 <h3>You can also mail us at</h3> 
                  <div className="phonecont">
                      <i class='bx bx-envelope' ></i>

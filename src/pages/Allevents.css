@@ -137,6 +137,7 @@
   font-family: "Proximasans";
   font-size: 14px;
   font-style: normal;
+  cursor: pointer;
   font-weight: 500;
   line-height: 150%;
   text-decoration-line: underline;
@@ -214,7 +215,9 @@ margin-top: 12px;
 user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
-
+.ccard-back a{
+  text-decoration: none;
+}
 
 /* ==== Responsive ==== */
 @media (max-width: 740px) {
