@@ -34,34 +34,34 @@ function Homefooter() {
                 <h2>Contact</h2>
                 <div className="contactcontent">
                 <div className="conleft">
-                  <h3>For accommodation query's</h3>
+                  <h3>For logistics queries</h3>
                   <div className="phonecont">
                      <i class='bx bx-phone'></i>
-                     <p>+91 9012345678 (Yuvansh)</p>
+                     <p>+91 7011964796 (Yuvansh)</p>
                   </div>
                    <div className="phonecont">
                      <i class='bx bx-phone'></i>
-                     <p>+91 9012345678 (Yuvansh)</p>
+                     <p>+91 7011964796 (Yuvansh)</p>
                   </div>
-                  <h3>For Event query's</h3> 
+                  <h3>For Event queries</h3> 
                  <div className="phonecont">
                      <i class='bx bx-phone'></i>
-                     <p>+91 9012345678 (Vansh)</p>
+                     <p>+91 9813709139 (Vansh)</p>
                   </div>
                    <div className="phonecont">
                      <i class='bx bx-phone'></i>
-                     <p>+91 9012345678 (Vansh)</p>
+                     <p>+91 9813709139 (Vansh)</p>
                   </div>
                 </div>
                 <div className="conright">
-                   <h3>For other query's</h3>
+                   <h3>For other queries</h3>
                   <div className="phonecont">
                      <i class='bx bx-phone'></i>
-                     <p>+91 9012345678 (Naina)</p>
+                     <p>+91 9467905906 (Naina)</p>
                   </div>
                    <div className="phonecont">
                      <i class='bx bx-phone'></i>
-                     <p>+91 9012345678 (Naina)</p>
+                     <p>+91 9467905906 (Naina)</p>
                   </div>
                 <h3>You can also mail us at</h3> 
                  <div className="phonecont">
@@ -71,7 +71,7 @@ function Homefooter() {
                 </div>
                 </div>
                 <div className="context">
-                  Team iConnect under PDUIIC is conducting the fest and is dedicated to help you with your query’s . 
+                  Team iConnect under PDUIIC is conducting the fest and is dedicated to help you with your querys . 
                 </div>
               </div>
             </div>

@@ -61,7 +61,7 @@ function Homemain() {
                 <li><a href="#events" onClick={(e) => handleScrollLink(e, "events")}>Events</a></li>
                 <li><a href="#gallery" onClick={(e) => handleScrollLink(e, "gallery")}>Gallery</a></li>
                 <li><a href="#contact" onClick={(e) => handleScrollLink(e, "contact")}>Contact us</a></li>
-                <li><a href="#faq" onClick={(e) => handleScrollLink(e, "faq")}>FAQ's</a></li>
+                <li><a href="#faq" onClick={(e) => handleScrollLink(e, "faq")}>FAQs</a></li>
               </ul>
             </div>
 
@@ -74,7 +74,7 @@ function Homemain() {
                 <li><a href="#events" onClick={(e) => {handleScrollLink(e, "events");setNavOpen(false);}}>Events</a></li>
                 <li><a href="#gallery" onClick={(e) => {handleScrollLink(e, "gallery");setNavOpen(false);}}>Gallery</a></li>
                 <li><a href="#contact" onClick={(e) => {handleScrollLink(e, "contact");setNavOpen(false);}}>Contact us</a></li>
-                <li><a href="#faq" onClick={(e) => {handleScrollLink(e, "faq");setNavOpen(false);}}>FAQ's</a></li>
+                <li><a href="#faq" onClick={(e) => {handleScrollLink(e, "faq");setNavOpen(false);}}>FAQs</a></li>
               </ul>
             </div>
             </div>
