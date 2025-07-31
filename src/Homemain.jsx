@@ -1,5 +1,5 @@
 import "./Homemain.css";
-import backvideo from "./assets/backvideo.mp4";
+import backvideo from "./assets/backvideo2.mp4";
 import iconnectlogo from "./assets/esumiconlogo.png";
 import esummitlogo from "./assets/esummitlogo.png";
 import mainlogomobile from "./assets/mainlogomobile.gif";
@@ -48,7 +48,7 @@ function Homemain() {
         <div className="header">
           <div className="glasscontainer">
             <div className='logo'>
-              <img src={esummitlogo} height="45px" width="230px" />
+              <img src={esummitlogo} height="40px" width="221px" />
               <div id="mobile" onClick={() => setNavOpen(!navOpen)}>
               <i className='bx bx-menu'></i>
             </div>
@@ -98,7 +98,7 @@ function Homemain() {
         </div>
 
         <p>
-          Presents Haryana's Biggest Entrepreneurship Summit is here! Transform your Perception into exceptional <span>Performance.</span>
+          Haryana’s Biggest Entrepreneurship Summit is here — Turn Your Vision into Exceptional <span>Performance!</span>
         </p>
         <h2>27th - 29th August 2025</h2>
         <button onClick={openGoogleCalendar}>Save the Date</button>

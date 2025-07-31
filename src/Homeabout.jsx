@@ -31,17 +31,13 @@ function Homeabout() {
               <div className="ableftup">
                 <h3>What is E-Summit ?</h3>
                 <p>
-                  E-Summit is GJUS&T Hisar's flagship entrepreneurship event,
-                  bringing together innovators, entrepreneurs, and leaders to
-                  foster the spirit of entrepreneurship and innovation.
+                  E-Summit, the flagship event of GJUS&T Hisar, brings together visionaries, entrepreneurs, and changemakers to celebrate and cultivate innovation.
                 </p>
               </div>
               <div className="ableftbel">
                 <h3>Our Mission</h3>
                 <p>
-                  To create a platform that nurtures entrepreneurial mindsets,
-                  facilitates networking, and provides valuable insights into the
-                  startup ecosystem.
+                  We aim to nurture entrepreneurial thinking, connect change-makers, and offer actionable insights into the startup ecosystem.
                 </p>
               </div>
             </div>
@@ -49,7 +45,7 @@ function Homeabout() {
             <div className="abright" data-aos="fade-left">
               <div className="video-container">
                 <iframe
-                  src="https://www.youtube.com/embed/a9VaCmRaQNE"
+                  src="https://www.youtube.com/embed/r97D4WdX7KM"
                   title="E-Summit Promo"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -73,8 +69,8 @@ function Homeabout() {
               <p>Events</p>
             </div>
             <div className="abox">
-              <h2>200K+</h2>
-              <p>Social Media Impressions</p>
+              <h2>20+</h2>
+              <p>Startups</p>
             </div>
           </div>
         </div>

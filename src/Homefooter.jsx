@@ -18,7 +18,7 @@ function Homefooter() {
             </div>
             <div className="lowerimg">
               E-Summit GJUS&T Hisar is Haryana’s largest entrepreneurial fest,<br/> 
-              organized by the Team iConnect under PDUIIC to inspire and empower<br/>
+              organized by the Team iConnect,PDUIIC to inspire and empower<br/>
                future leaders and prosper nations growth
             </div>
             

@@ -36,19 +36,19 @@ function Keyevents() {
     registerLink: "https://lu.ma/event/evt-5CxCjcLVGb938PV",
   },
   {
-    title: "Ideathon",
+    title: "Startup Space",
     date: "29th August 2025",
     ruleBookLink: "https://example.com/rulebook2.pdf",
     registerLink: "https://lu.ma/event/evt-Abc123",
   },
   {
-    title: "Pitch Parade",
+    title: "Startup Auction",
     date: "30th August 2025",
     ruleBookLink: "https://example.com/rulebook3.pdf",
     registerLink: "https://lu.ma/event/evt-Def456",
   },
   {
-    title: "Tech Expo",
+    title: "Brand Strom",
     date: "31st August 2025",
     ruleBookLink: "https://example.com/rulebook4.pdf",
     registerLink: "https://lu.ma/event/evt-Ghi789",

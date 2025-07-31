@@ -34,31 +34,31 @@ function Faq() {
   const questions = [
     {
       question: "Who can participate in E-Summit 2025?",
-      answer: "All students from universities and colleges across India are eligible for inter-university events. Select sessions and competitions are also open exclusively to GJUS&T students. Please check event-specific eligibility before registering."
+      answer: "E-Summit 2025 is open to all university and college students across India. While some events are exclusive to GJUS&T students, the majority are inter-university and welcome participants from any institution or academic background. Each event will clearly specify its eligibility criteria."
     },
     {
       question: "Is there any registration fee?",
-      answer: "No, there are no registration fees for any E-Summit 2025 events. All sessions, competitions, and activities are completely free to attend and participate in."
+      answer: "No, there is no registration fee for participating in any event under E-Summit 2025. All competitions, workshops, and sessions are free. Just bring your energy, ideas, and the will to learn."
     },
     {
       question: "What are the participation formats for different events?",
-      answer: "Here is a summary of participation formats:Startup Spotlight: Individual or Team (up to 4 members).Startup Auction: Team (4 members).Brand-storm 60: Team (2 to 4 members).Business Quiz: Individual only.Case Clash: Team (2 to 4 members).Poster Presentation (Startup Space): Individual or Team (up to 4).Sessions (Accelerator & Lean Startup Bootcamp): Individual attendees.Make sure all team members are from the same college where applicable."
+      answer: "Participation format varies from event to event. Some events, like the Business Quiz, are designed for individual participants, while others such as Startup Auction, Brand-storm 60, and Case Clash require teams ranging from two to four members. Startup Spotlight allows both individual and team participation. Speaker sessions and workshops are also open to solo attendees. The format and team size will be mentioned clearly on the event registration page."
     },
     {
       question: "Can I register for more than one event?",
-      answer: "Yes. You can register for multiple events, but make sure that the event timings do not overlap. The complete event schedule is listed on the website to help you plan accordingly."
+      answer: "Yes, participants are allowed and encouraged to register for multiple events, as long as the schedule allows it. Be sure to check the event dates and timings to avoid clashes between sessions."
     },
     {
-      question: "Are the events online or offline?",
-      answer: "All events in E-Summit 2025 are offline and will be held at Guru Jambheshwar University of Science & Technology (GJUS&T), Hisar. Venue details are mentioned on the Events page"
+      question: "Are all the events offline?",
+      answer: "While most of the flagship events are scheduled to be conducted offline at Guru Jambheshwar University of Science & Technology (GJUS&T), Hisar, some events may be planned as online sessions. Details about the event mode—whether online or offline—will be specified in the event descriptions and updated on the website accordingly."
     },
     {
-      question: "What should I prepare for different events?",
-      answer: "Preparation varies by event:Startup Spotlight: Prepare a startup pitch and presentation.Startup Auction: Understand basic startup metrics and strategy.Brand-storm 60: Be ready to design logos, taglines, and concepts within a time limit.Business Quiz: Brush up on business, finance, startups, and current affairs.Case Clash: Practice quick analysis of real business cases and strategic thinking.Sessions: Come prepared to take notes and engage.Guidelines will be sent post-registration."
+      question: "How will I recieve event updates and important information?",
+      answer: "After registering, participants will receive updates through email and WhatsApp. It is important to provide accurate contact details during registration. All essential announcements such as event timings, venue updates, guidelines, and results will also be shared via official social media handles and the website."
     },
     {
       question: "What do participants and winners receive?",
-      answer: "Participation certificates for all valid entries.Prizes, goodies, and certificates for winners.Access to mentorship and networking opportunities.Recognition on E-Summit social media handles and during the closing ceremony."
+      answer: "All participants will receive official digital certificates. Winners will receive prizes, goodies, and on-stage recognition during the closing ceremony. Many events also offer mentorship, networking opportunities, and social media features for standout performers."
     },
   ];
 
