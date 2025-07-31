@@ -61,11 +61,11 @@ function Homeabout() {
               <p>Social Media Impressions</p>
             </div>
             <div className="abox">
-              <h2>5K+</h2>
+              <h2>3K+</h2>
               <p>Footfall last year</p>
             </div>
             <div className="abox">
-              <h2>12+</h2>
+              <h2>10</h2>
               <p>Events</p>
             </div>
             <div className="abox">

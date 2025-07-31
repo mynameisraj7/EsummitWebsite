@@ -25,7 +25,7 @@ function Homefooter() {
             </div>
             <div className="address">
                 <h2>Address</h2>
-                <p>iConnect Office, PDUIIC building,<br/>
+                <p>Conference hall, PDUIIC,<br/>
                     GJUS&T, Hisar,<br/>
                     Haryana - 125001</p>
             </div>
