@@ -1,5 +1,6 @@
 import "./Keyevents.css";
-// import keyimage from "./assets/keyeventimage.png";
+import startupspotlight from "./assets/keyeventimage.png";
+import startupspace from "./assets/startupsapce.jpeg";
 import keyimage from "./assets/comingsoon.jpeg";
 import { useEffect,useState } from "react";
 import AOS from "aos";
@@ -32,25 +33,29 @@ function Keyevents() {
   const events = [
   {
     title: "Startup Spotlight",
-    date: "28th August 2025",
+    date: "27th August 2025",
+    image:startupspotlight,
     ruleBookLink: "https://drive.google.com/drive/folders/17-VHfysMSGAW12h3ioUXRk01vzeHPcSb?usp=drive_link",
     registerLink: "https://unstop.com/p/startup-spotlight-e-summit25-guru-jambheshwar-university-of-science-and-technology-hisar-haryana-1523983",
   },
   {
     title: "Startup Space",
-    date: "29th August 2025",
-    ruleBookLink: "https://example.com/rulebook2.pdf",
-    registerLink: "https://lu.ma/event/evt-Abc123",
+    date: "27th August 2025",
+    image:startupspace,
+    ruleBookLink: "https://drive.google.com/drive/folders/1s9zKPV_1rujPAw192zijRREI-ct6qZqg",
+    registerLink: "https://unstop.com/p/startup-space-e-summit25-guru-jambheshwar-university-of-science-and-technology-hisar-haryana-1530197",
   },
   {
     title: "Startup Auction",
     date: "30th August 2025",
+    image:keyimage,
     ruleBookLink: "https://example.com/rulebook3.pdf",
     registerLink: "https://lu.ma/event/evt-Def456",
   },
   {
     title: "Brand Strom",
     date: "31st August 2025",
+    image:keyimage,
     ruleBookLink: "https://example.com/rulebook4.pdf",
     registerLink: "https://lu.ma/event/evt-Ghi789",
   },
@@ -73,7 +78,7 @@ function Keyevents() {
           >
             <div className="card-inner">
               <div className="card-front">
-                <img src={keyimage} loading="lazy" />
+                <img src={event.image} loading="lazy" />
                 <h2>{event.title}</h2>
                 <div className="smallcardtext">
                   <p>{event.date}</p>
