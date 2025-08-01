@@ -10,6 +10,20 @@ import { Link } from 'react-router-dom';
 
 function Keyevents() {
 
+
+  const [showEsummitMessage, setShowEsummitMessage] = useState(false);
+
+    const handleEsummitClick = (e) => {
+    e.preventDefault();
+    setShowEsummitMessage(true);
+    setTimeout(() => {
+      setShowEsummitMessage(false);
+    }, 2500);
+  };
+
+
+
+  
   useEffect(() => {
   AOS.init({
     duration: 800,
@@ -49,20 +63,27 @@ function Keyevents() {
     title: "Startup Auction",
     date: "30th August 2025",
     image:keyimage,
-    ruleBookLink: "https://example.com/rulebook3.pdf",
-    registerLink: "https://lu.ma/event/evt-Def456",
+    // ruleBookLink: "https://example.com/rulebook3.pdf",
+    // registerLink: "https://lu.ma/event/evt-Def456",
+    comingSoon:true,
   },
   {
     title: "Brand Strom",
     date: "31st August 2025",
     image:keyimage,
-    ruleBookLink: "https://example.com/rulebook4.pdf",
-    registerLink: "https://lu.ma/event/evt-Ghi789",
+    // ruleBookLink: "https://example.com/rulebook4.pdf",
+    // registerLink: "https://lu.ma/event/evt-Ghi789",
+    comingSoon:true,
   },
 ];
 
 
   return (
+    <>
+
+     {/* Sliding message */}
+      {showEsummitMessage && <div className="esummit-toast">🚧 Coming Soon</div>}
+
     <section id="events" className="keyback">
       <div className="keytitle" data-aos="fade-down">
         <h2>Key Events</h2>
@@ -90,8 +111,22 @@ function Keyevents() {
                 <p>
                   Inviting students to bring forth impactful solutions to real-world problems, pitch them like entrepreneurs, and battle it out for recognition, rewards, and a chance to shine in front of seasoned experts.
                 </p>
-                <a href={event.ruleBookLink} className="outwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
-                <a href={event.registerLink} className="inwhite" target="_blank" rel="noopener noreferrer">Register Now</a>
+                {/* <a href={event.ruleBookLink} className="outwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
+                <a href={event.registerLink} className="inwhite" target="_blank" rel="noopener noreferrer">Register Now</a> */}
+                 {event.comingSoon ? (
+    <>
+      <a onClick={handleEsummitClick} className="outwhite" role="button">Rule book</a>
+      <a onClick={handleEsummitClick} className="inwhite" role="button">Register Now</a>
+    </>
+  ) : (
+    <>
+      <a href={event.ruleBookLink} className="outwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
+      <a href={event.registerLink} className="inwhite" target="_blank" rel="noopener noreferrer">Register Now</a>
+    </>
+  )}
+
+
+
               </div>
             </div>
           </div>
@@ -103,6 +138,7 @@ function Keyevents() {
 
       </div>
     </section>
+    </>
   );
 }
 

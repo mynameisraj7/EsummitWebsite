@@ -1,5 +1,5 @@
 import "./Homefooter.css";
-import iconnectlogo from "./assets/esumiconlogo.png";
+import iconnectlogo from "./assets/iconnectlog.svg";
 import esummitlogo from "./assets/esummitlogo.png";
 import whiteline from "./assets/whiteline.png";
 

@@ -1,6 +1,6 @@
 import "./Homemain.css";
 import backvideo from "./assets/backvideo2.mp4";
-import iconnectlogo from "./assets/esumiconlogo.png";
+import iconnectlogo from "./assets/iconnectlog.svg";
 import esummitlogo from "./assets/esummitlogo.png";
 import mainlogomobile from "./assets/mainlogomobile.gif";
 import whitelogo from "./assets/whitelogo.gif";

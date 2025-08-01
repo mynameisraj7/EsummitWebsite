@@ -219,6 +219,44 @@ user-select: none;
   text-decoration: none;
 }
 
+
+
+.esummit-toast {
+  position: fixed;
+  top: 127px;
+  right: -300px;
+  background-color: #111;
+  color: #fff;
+  font-family: "Overpass";
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  z-index: 10000;
+  animation: slideInOut 2s ease-in-out forwards;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes slideInOut {
+  0% {
+    right: -300px;
+    opacity: 0;
+  }
+  20%, 80% {
+    right: 20px;
+    opacity: 1;
+  }
+  100% {
+    right: -300px;
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
 /* ==== Responsive ==== */
 @media (max-width: 740px) {
   .kkeyback {
