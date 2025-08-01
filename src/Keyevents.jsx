@@ -1,5 +1,6 @@
 import "./Keyevents.css";
-import keyimage from "./assets/keyeventimage.png";
+// import keyimage from "./assets/keyeventimage.png";
+import keyimage from "./assets/comingsoon.jpeg";
 import { useEffect,useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -32,8 +33,8 @@ function Keyevents() {
   {
     title: "Startup Spotlight",
     date: "28th August 2025",
-    ruleBookLink: "https://example.com/rulebook1.pdf",
-    registerLink: "https://lu.ma/event/evt-5CxCjcLVGb938PV",
+    ruleBookLink: "https://drive.google.com/drive/folders/17-VHfysMSGAW12h3ioUXRk01vzeHPcSb?usp=drive_link",
+    registerLink: "https://unstop.com/p/startup-spotlight-e-summit25-guru-jambheshwar-university-of-science-and-technology-hisar-haryana-1523983",
   },
   {
     title: "Startup Space",

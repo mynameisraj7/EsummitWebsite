@@ -42,7 +42,7 @@ margin: 10px auto 0 auto;
     justify-content: center;
     width: 70%;
     border-radius: 16px;
-border: 1px dashed #CF00FF;
+border: 1px solid #CF00FF;
 background: #1C0021;
 }
 .usleft h2{
@@ -153,7 +153,7 @@ display: flex;
 
 .ussocials{
      padding: 24px 16px;
-     border: 1px dashed #CF00FF;
+     border: 1px solid #CF00FF;
      height: 25%;
      border-radius: 16px;
     
@@ -190,7 +190,7 @@ line-height: 125%; /* 30px */
 
 .reachus{
     padding: 24px 16px;
-    border: 1px dashed #CF00FF;
+    border: 1px solid #CF00FF;
     height: 75%;
     border-radius: 16px;
 }

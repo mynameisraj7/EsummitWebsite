@@ -48,6 +48,8 @@ margin: 10px auto 0 auto;
   outline: none;    
   user-select: none;
   -webkit-tap-highlight-color: transparent;
+  border: 1px solid #CF00FF;
+  border-radius: 8px;
 }
 
 
