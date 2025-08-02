@@ -134,7 +134,7 @@ function Keyevents() {
       </div>
 
       <div className="morecardscont" data-aos="fade-up">
-        <Link to="/more-events" className="morecards">View More Events</Link>
+        <Link to="/more-events" className="morecards">View all Events</Link>
 
       </div>
     </section>
