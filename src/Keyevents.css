@@ -172,8 +172,7 @@ user-select: none;
   color: #cf00ff;
   font-style: normal;
 font-weight: 500;
-line-height: 150%; 
-  line-height: 1.6;
+line-height: 150%;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
 }

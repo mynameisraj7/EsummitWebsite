@@ -49,6 +49,7 @@ function Keyevents() {
     title: "Startup Spotlight",
     date: "27th August 2025",
     image:startupspotlight,
+    description:"A startup pitching competition where students present innovative ideas, pitch like entrepreneurs, and compete for recognition, rewards, and expert feedback at E-Summit ’25.",
     ruleBookLink: "https://drive.google.com/drive/folders/17-VHfysMSGAW12h3ioUXRk01vzeHPcSb?usp=drive_link",
     registerLink: "https://unstop.com/p/startup-spotlight-e-summit25-guru-jambheshwar-university-of-science-and-technology-hisar-haryana-1523983",
   },
@@ -56,6 +57,7 @@ function Keyevents() {
     title: "Startup Space",
     date: "27th August 2025",
     image:startupspace,
+    description:"Startup Space at E-Summit ’25 invites students to visually showcase their startup ideas, research, or prototypes—transforming bold concepts into stories that inform, impress, and inspire.",
     ruleBookLink: "https://drive.google.com/drive/folders/1s9zKPV_1rujPAw192zijRREI-ct6qZqg",
     registerLink: "https://unstop.com/p/startup-space-e-summit25-guru-jambheshwar-university-of-science-and-technology-hisar-haryana-1530197",
   },
@@ -108,9 +110,7 @@ function Keyevents() {
               </div>
               <div className="card-back">
                 <h2>{event.title}</h2>
-                <p>
-                  Inviting students to bring forth impactful solutions to real-world problems, pitch them like entrepreneurs, and battle it out for recognition, rewards, and a chance to shine in front of seasoned experts.
-                </p>
+                <p>{event.description}</p>
                 {/* <a href={event.ruleBookLink} className="outwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
                 <a href={event.registerLink} className="inwhite" target="_blank" rel="noopener noreferrer">Register Now</a> */}
                  {event.comingSoon ? (
