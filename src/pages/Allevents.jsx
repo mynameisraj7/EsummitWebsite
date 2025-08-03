@@ -1,5 +1,7 @@
 import "./Allevents.css"
 import keyimage from "../assets/comingsoon.jpeg";
+import startupspotlight from "../assets/keyeventimage.png";
+import startupspace from "../assets/startupsapce.jpeg";
 import esummitlogo from "../assets/esummitlogo.png";
 import { useEffect,useState } from "react";
 import AOS from "aos";
@@ -74,21 +76,24 @@ const toggleFlipRow2 = (index) => {
       const events = [
       {
         title: "Startup Spotlight",
-        date: "28th August 2025",
-        // ruleBookLink: "https://example.com/rulebook1.pdf",
-        // registerLink: "https://lu.ma/event/evt-5CxCjcLVGb938PV",
-        comingSoon:true,
+        date: "27th August 2025",
+        image:startupspotlight,
+            description:"A startup pitching competition where students present innovative ideas, pitch like entrepreneurs, and compete for recognition, rewards, and expert feedback at E-Summit ’25.",
+            ruleBookLink: "https://drive.google.com/drive/folders/17-VHfysMSGAW12h3ioUXRk01vzeHPcSb?usp=drive_link",
+            registerLink: "https://unstop.com/p/startup-spotlight-e-summit25-guru-jambheshwar-university-of-science-and-technology-hisar-haryana-1523983",
       },
       {
-        title: "Ideathon",
-        date: "29th August 2025",
-        // ruleBookLink: "https://example.com/rulebook2.pdf",
-        // registerLink: "https://lu.ma/event/evt-Abc123",
-        comingSoon:true,
+        title: "Startup Space",
+        date: "27th August 2025",
+         image:startupspace,
+            description:"Startup Space at E-Summit ’25 invites students to visually showcase their startup ideas, research, or prototypes—transforming bold concepts into stories that inform, impress, and inspire.",
+            ruleBookLink: "https://drive.google.com/drive/folders/1s9zKPV_1rujPAw192zijRREI-ct6qZqg",
+            registerLink: "https://unstop.com/p/startup-space-e-summit25-guru-jambheshwar-university-of-science-and-technology-hisar-haryana-1530197",
       },
       {
         title: "Pitch Parade",
         date: "30th August 2025",
+        image:keyimage,
         // ruleBookLink: "https://example.com/rulebook3.pdf",
         // registerLink: "https://lu.ma/event/evt-Def456",
         comingSoon:true,
@@ -96,6 +101,7 @@ const toggleFlipRow2 = (index) => {
       {
         title: "Tech Expo",
         date: "31st August 2025",
+        image:keyimage,
         // ruleBookLink: "https://example.com/rulebook4.pdf",
         // registerLink: "https://lu.ma/event/evt-Ghi789",
         comingSoon:true,
@@ -192,7 +198,7 @@ const toggleFlipRow2 = (index) => {
           >
             <div className="ccard-inner">
               <div className="ccard-front">
-                <img src={keyimage} loading="lazy" />
+                <img src={event.image} loading="lazy" />
                 <h2>{event.title}</h2>
                 <div className="ssmallcardtext">
                   <p>{event.date}</p>
@@ -201,9 +207,7 @@ const toggleFlipRow2 = (index) => {
               </div>
               <div className="ccard-back">
                 <h2>{event.title}</h2>
-                <p>
-                  Inviting students to bring forth impactful solutions to real-world problems, pitch them like entrepreneurs, and battle it out for recognition, rewards, and a chance to shine in front of seasoned experts.
-                </p>
+                <p>{event.description}</p>
                 {/* <a href={event.ruleBookLink} className="ooutwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
                 <a href={event.registerLink} className="iinwhite" target="_blank" rel="noopener noreferrer">Register Now</a> */}
 
