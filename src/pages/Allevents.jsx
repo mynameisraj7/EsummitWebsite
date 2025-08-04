@@ -138,7 +138,7 @@ const toggleFlipRow2 = (index) => {
         registerLink: "https://lu.ma/event/evt-Def456",
       },
       {
-        title: "Techpo",
+        title: "Valid Event",
         date: "31st August 2025",
         ruleBookLink: "https://example.com/rulebook4.pdf",
         registerLink: "https://lu.ma/event/evt-Ghi789",
