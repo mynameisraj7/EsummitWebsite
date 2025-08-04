@@ -8,3 +8,11 @@ html, body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+body {
+  scrollbar-width: none;     
+  -ms-overflow-style: none;  
+}
+
+body::-webkit-scrollbar {
+  display: none;             
+}
