@@ -71,7 +71,7 @@ border: 1px solid var(--ESummit-Purple-700, #9A13BC);
 background: transparent;
 width: 100%;
 padding: 12px;
-color: var(--ESummit-Purple-700, #9A13BC);
+color: white;
 }
 .frame1 input::placeholder{
     color: var(--ESummit-Purple-700, #9A13BC);
@@ -100,7 +100,7 @@ border: 1px solid var(--ESummit-Purple-700, #9A13BC);
 background: transparent;
 width: 100%;
 padding: 12px;
-color: var(--ESummit-Purple-700, #9A13BC);
+color: white;
 resize: none;
 height: 85px;
 user-select: none;

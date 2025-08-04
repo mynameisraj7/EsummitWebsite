@@ -2,10 +2,12 @@ import "./Allevents.css"
 import keyimage from "../assets/comingsoon.jpeg";
 import startupspotlight from "../assets/keyeventimage.png";
 import startupspace from "../assets/startupsapce.jpeg";
+import braingame from "../assets/braingame.jpeg";
 import esummitlogo from "../assets/esummitlogo.png";
 import { useEffect,useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link,useLocation} from 'react-router-dom';
 
 function Allevents() {
 
@@ -39,17 +41,24 @@ function Allevents() {
     }, []);
 
     const handleScrollLink = (e, targetId) => {
-    e.preventDefault();
+  e.preventDefault();
+
+  if (targetId === "home") {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } else {
     const el = document.getElementById(targetId);
     if (el) {
-      const offset = -0;
+      const offset = -90;
       const y = el.getBoundingClientRect().top + window.pageYOffset + offset;
       window.scrollTo({ top: y, behavior: 'smooth' });
     } else {
       window.location.href = `/#${targetId}`;
     }
-    setNavOpen(false);
-  };
+  }
+
+  setNavOpen(false);
+};
+
     
     
       const [flippedIndexesRow1, setFlippedIndexesRow1] = useState([]);
@@ -91,12 +100,13 @@ const toggleFlipRow2 = (index) => {
             registerLink: "https://unstop.com/p/startup-space-e-summit25-guru-jambheshwar-university-of-science-and-technology-hisar-haryana-1530197",
       },
       {
-        title: "Pitch Parade",
-        date: "30th August 2025",
+        title: "Business Quiz",
+        date: "27th August 2025",
         image:keyimage,
-        // ruleBookLink: "https://example.com/rulebook3.pdf",
-        // registerLink: "https://lu.ma/event/evt-Def456",
-        comingSoon:true,
+        image:braingame,
+        description:"Put your business smarts to the test at the second edition of the Business Quiz at E-Summit 2025. Challenge yourself with two dynamic offline rounds covering startups, marketing, finance, and more.",
+        ruleBookLink: "https://drive.google.com/drive/folders/1UAcrhGRwqaoyJCGYze8hZJj4sDgUqKN0",
+        registerLink: "https://lu.ma/kpdbgsh7",
       },
       {
         title: "Tech Expo",
@@ -149,7 +159,9 @@ const toggleFlipRow2 = (index) => {
         <div className="header">
                   <div className="glasscontainer">
                     <div className='logo'>
-                      <img src={esummitlogo} height="45px" width="230px" />
+                      <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+                          <img src={esummitlogo} height="40px" width="221px" alt="E-Summit Logo" style={{ cursor: "pointer" }} />
+                      </Link>
                       <div id="mobile" onClick={() => setNavOpen(!navOpen)}>
                       <i className='bx bx-menu'></i>
                     </div>
@@ -157,12 +169,12 @@ const toggleFlipRow2 = (index) => {
         
                     <div className="navlinks desktop-nav">
                       <ul id="navbar">
-                        <li><a href="#home" onClick={(e) => handleScrollLink(e, "home")}>Home</a></li>
+                        <li><Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</Link></li>
                         <li><a href="#about" onClick={(e) => handleScrollLink(e, "about")}>About</a></li>
                         <li><a href="#events" onClick={(e) => handleScrollLink(e, "events")}>Events</a></li>
                         <li><a href="#gallery" onClick={(e) => handleScrollLink(e, "gallery")}>Gallery</a></li>
                         <li><a href="#contact" onClick={(e) => handleScrollLink(e, "contact")}>Contact us</a></li>
-                        <li><a href="#faq" onClick={(e) => handleScrollLink(e, "faq")}>FAQ's</a></li>
+                        <li><a href="#faq" onClick={(e) => handleScrollLink(e, "faq")}>FAQs</a></li>
                       </ul>
                     </div>
         
@@ -170,7 +182,7 @@ const toggleFlipRow2 = (index) => {
                       <div className={`mobile-nav-wrapper ${navOpen ? "open" : ""}`}>
                     <div className="mobile-nav">
                       <ul id="navbar">
-                        <li><a href="#home" onClick={(e) => {handleScrollLink(e, "home");setNavOpen(false);}}>Home</a></li>
+                        <li><Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</Link></li>
                         <li><a href="#about" onClick={(e) => {handleScrollLink(e, "about");setNavOpen(false);}}>About</a></li>
                         <li><a href="#events" onClick={(e) => {handleScrollLink(e, "events");setNavOpen(false);}}>Events</a></li>
                         <li><a href="#gallery" onClick={(e) => {handleScrollLink(e, "gallery");setNavOpen(false);}}>Gallery</a></li>

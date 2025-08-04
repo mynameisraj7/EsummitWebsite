@@ -2,9 +2,62 @@ import "./Homeconnect.css";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useState } from "react";
 
 
 function Homeconnect() {
+
+     const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [status, setStatus] = useState(""); // For showing feedback
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    try {
+        const response = await fetch("https://email.kshyp.tech/", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+        });
+        
+        // Check if the HTTP request was successful
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        // Parse the JSON response
+        const data = await response.json();
+        console.log('API Response:', data); // For debugging
+        
+        // Check the status from the parsed response
+        if (data.status === true) {
+            setStatus("Message sent successfully!");
+            setFormData({ name: "", email: "", subject: "", message: "" });
+        } else {
+            setStatus("Failed to send message. Please try again.");
+        }
+        
+    } catch (error) {
+        console.error('Error:', error);
+        setStatus("Something went wrong. Try again later.");
+    }
+};
+
+
+
+
 
     useEffect(() => {
   AOS.init({
@@ -23,36 +76,61 @@ function Homeconnect() {
           <div className="conline"></div>
           </div>
           <div className="concontainer">
-               <form
-  action="https://formsubmit.co/iconnectgjust@gmail.com"
-  method="POST"
-  className="usleft"
-  data-aos="fade-right"
->
+               <form onSubmit={handleSubmit} className="usleft" data-aos="fade-right">
   <h2>Get in Touch</h2>
 
   <div className="frame1">
     <div>Full Name</div>
-    <input type="text" name="name" placeholder="Aditya Thakur" required />
+    <input
+      type="text"
+      name="name"
+      value={formData.name}
+      onChange={handleChange}
+      placeholder="Aditya Thakur"
+      required
+    />
   </div>
+
   <div className="frame1">
     <div>Email</div>
-    <input type="email" name="email" placeholder="some@example.com" required />
+    <input
+      type="email"
+      name="email"
+      value={formData.email}
+      onChange={handleChange}
+      placeholder="some@example.com"
+      required
+    />
   </div>
+
   <div className="frame1">
     <div>Subject</div>
-    <input type="text" name="_subject" placeholder="Startup Spotlight" required />
+    <input
+      type="text"
+      name="subject"
+      value={formData.subject}
+      onChange={handleChange}
+      placeholder="Startup Spotlight"
+      required
+    />
   </div>
+
   <div className="frame2">
     <div>Message</div>
-    <textarea name="message" placeholder="I want to know about..." required></textarea>
+    <textarea
+      name="message"
+      value={formData.message}
+      onChange={handleChange}
+      placeholder="I want to know about..."
+      required
+    ></textarea>
   </div>
 
-  {/* Hidden input to disable CAPTCHA */}
-  <input type="hidden" name="_captcha" value="false" />
-
   <button className="contbutton" type="submit">Submit</button>
+
+  {status && <p className="form-status">{status}</p>}
 </form>
+
 
 
             <div className="usright" data-aos="fade-left">

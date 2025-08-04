@@ -26,17 +26,24 @@ function Homemain() {
 };
 
   const handleScrollLink = (e, targetId) => {
-    e.preventDefault();
+  e.preventDefault();
+
+  if (targetId === "home") {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } else {
     const el = document.getElementById(targetId);
     if (el) {
-      const offset = -0;
+      const offset = -90;
       const y = el.getBoundingClientRect().top + window.pageYOffset + offset;
       window.scrollTo({ top: y, behavior: 'smooth' });
     } else {
       window.location.href = `/#${targetId}`;
     }
-    setNavOpen(false);
-  };
+  }
+
+  setNavOpen(false);
+};
+
 
   useEffect(() => {
     setNavOpen(false); // close on route change
@@ -48,7 +55,9 @@ function Homemain() {
         <div className="header">
           <div className="glasscontainer">
             <div className='logo'>
-              <img src={esummitlogo} height="40px" width="221px" />
+              <a href="#home" onClick={(e) => handleScrollLink(e, "home")}>
+                      <img src={esummitlogo} height="40px" width="221px" alt="E-Summit Logo" />
+              </a>
               <div id="mobile" onClick={() => setNavOpen(!navOpen)}>
               <i className='bx bx-menu'></i>
             </div>

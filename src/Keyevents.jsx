@@ -2,6 +2,7 @@ import "./Keyevents.css";
 import startupspotlight from "./assets/keyeventimage.png";
 import startupspace from "./assets/startupsapce.jpeg";
 import keyimage from "./assets/comingsoon.jpeg";
+import braingame from "./assets/braingame.jpeg";
 import { useEffect,useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -62,12 +63,12 @@ function Keyevents() {
     registerLink: "https://unstop.com/p/startup-space-e-summit25-guru-jambheshwar-university-of-science-and-technology-hisar-haryana-1530197",
   },
   {
-    title: "Startup Auction",
-    date: "30th August 2025",
-    image:keyimage,
-    // ruleBookLink: "https://example.com/rulebook3.pdf",
-    // registerLink: "https://lu.ma/event/evt-Def456",
-    comingSoon:true,
+    title: "Business Quiz",
+    date: "27th August 2025",
+    image:braingame,
+    description:"Put your business smarts to the test at the second edition of the Business Quiz at E-Summit 2025. Challenge yourself with two dynamic offline rounds covering startups, marketing, finance, and more.",
+    ruleBookLink: "https://drive.google.com/drive/folders/1UAcrhGRwqaoyJCGYze8hZJj4sDgUqKN0",
+    registerLink: "https://lu.ma/kpdbgsh7",
   },
   {
     title: "Brand Strom",
