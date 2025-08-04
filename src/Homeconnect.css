@@ -102,6 +102,7 @@ width: 100%;
 padding: 12px;
 color: white;
 resize: none;
+overflow: hidden;
 height: 85px;
 user-select: none;
   -webkit-tap-highlight-color: transparent;
