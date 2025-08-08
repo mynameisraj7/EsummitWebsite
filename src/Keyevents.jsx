@@ -1,8 +1,8 @@
 import "./Keyevents.css";
-import startupspotlight from "./assets/keyeventimage.png";
-import startupspace from "./assets/startupsapce.jpeg";
+import startupspotlight from "./assets/startspot.jpeg";
+import startupspace from "./assets/startspace.jpeg";
 import keyimage from "./assets/comingsoon.jpeg";
-import braingame from "./assets/braingame.jpeg";
+import braingame from "./assets/braingames.jpeg";
 import { useEffect,useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";

@@ -1,8 +1,8 @@
 import "./Allevents.css"
 import keyimage from "../assets/comingsoon.jpeg";
-import startupspotlight from "../assets/keyeventimage.png";
-import startupspace from "../assets/startupsapce.jpeg";
-import braingame from "../assets/braingame.jpeg";
+import startupspotlight from "../assets/startspot.jpeg";
+import startupspace from "../assets/startspace.jpeg";
+import braingame from "../assets/braingames.jpeg";
 import esummitlogo from "../assets/esummitlogo.png";
 import { useEffect,useState } from "react";
 import AOS from "aos";
