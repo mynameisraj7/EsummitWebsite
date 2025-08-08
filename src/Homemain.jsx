@@ -109,7 +109,7 @@ function Homemain() {
         <p>
           Haryana’s Biggest Entrepreneurship Summit is here — Turn Your Vision into Exceptional <span>Performance!</span>
         </p>
-        <h2>27th - 29th August 2025</h2>
+        <h2>25th - 27th August 2025</h2>
         <button onClick={openGoogleCalendar}>Save the Date</button>
 
         <div className="ssocials">
