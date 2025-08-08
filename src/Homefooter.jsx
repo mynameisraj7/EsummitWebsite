@@ -34,35 +34,35 @@ function Homefooter() {
                 <h2>Contact</h2>
                 <div className="contactcontent">
                 <div className="conleft">
-                  <h3>For logistics queries</h3>
+                  <h3>For logistics and accomodation queries</h3>
                   <div className="phonecont">
                      <i class='bx bx-phone'></i>
                      <p>+91 7011964796 (Yuvansh)</p>
                   </div>
-                   {/* <div className="phonecont">
+                   <div className="phonecont">
                      <i class='bx bx-phone'></i>
-                     <p>+91 7011964796 (Yuvansh)</p>
-                  </div> */}
+                     <p>+91 9729561035 (Tushar)</p>
+                  </div>
                   <h3>For Event queries</h3> 
                  <div className="phonecont">
                      <i class='bx bx-phone'></i>
                      <p>+91 9813709139 (Vansh)</p>
                   </div>
-                   {/* <div className="phonecont">
+                   <div className="phonecont">
                      <i class='bx bx-phone'></i>
-                     <p>+91 9813709139 (Vansh)</p>
-                  </div> */}
+                     <p>+91 7015537609 (Krish)</p>
+                  </div>
                 </div>
                 <div className="conright">
                    <h3>For other queries</h3>
                   <div className="phonecont">
                      <i class='bx bx-phone'></i>
-                     <p>+91 9467905906</p>
-                  </div>
-                   {/* <div className="phonecont">
-                     <i class='bx bx-phone'></i>
                      <p>+91 9467905906 (Naina)</p>
-                  </div> */}
+                  </div>
+                   <div className="phonecont">
+                     <i class='bx bx-phone'></i>
+                     <p>+91 6281482740 (Rohit)</p>
+                  </div>
                 <h3>You can also mail us at</h3> 
                  <div className="phonecont">
                      <i class='bx bx-envelope' ></i>
