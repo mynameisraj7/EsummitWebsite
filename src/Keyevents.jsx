@@ -48,7 +48,7 @@ function Keyevents() {
   const events = [
   {
     title: "Startup Spotlight",
-    date: "27th August 2025",
+    date: "26th August 2025",
     image:startupspotlight,
     description:"A startup pitching competition where students present innovative ideas, pitch like entrepreneurs, and compete for recognition, rewards, and expert feedback at E-Summit ’25.",
     ruleBookLink: "https://drive.google.com/drive/folders/17-VHfysMSGAW12h3ioUXRk01vzeHPcSb?usp=drive_link",
@@ -56,7 +56,7 @@ function Keyevents() {
   },
   {
     title: "Startup Space",
-    date: "27th August 2025",
+    date: "25th August 2025",
     image:startupspace,
     description:"Startup Space at E-Summit ’25 invites students to visually showcase their startup ideas, research, or prototypes—transforming bold concepts into stories that inform, impress, and inspire.",
     ruleBookLink: "https://drive.google.com/drive/folders/1s9zKPV_1rujPAw192zijRREI-ct6qZqg",
@@ -64,7 +64,7 @@ function Keyevents() {
   },
   {
     title: "Business Quiz",
-    date: "27th August 2025",
+    date: "25th August 2025",
     image:braingame,
     description:"Put your business smarts to the test at the second edition of the Business Quiz at E-Summit 2025. Challenge yourself with two dynamic offline rounds covering startups, marketing, finance, and more.",
     ruleBookLink: "https://drive.google.com/drive/folders/1UAcrhGRwqaoyJCGYze8hZJj4sDgUqKN0",
@@ -115,18 +115,16 @@ function Keyevents() {
                 {/* <a href={event.ruleBookLink} className="outwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
                 <a href={event.registerLink} className="inwhite" target="_blank" rel="noopener noreferrer">Register Now</a> */}
                  {event.comingSoon ? (
-    <>
-      <a onClick={handleEsummitClick} className="outwhite" role="button">Rule book</a>
-      <a onClick={handleEsummitClick} className="inwhite" role="button">Register Now</a>
-    </>
-  ) : (
-    <>
-      <a href={event.ruleBookLink} className="outwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
-      <a href={event.registerLink} className="inwhite" target="_blank" rel="noopener noreferrer">Register Now</a>
-    </>
-  )}
-
-
+                    <>
+                      <a onClick={handleEsummitClick} className="outwhite" role="button">Rule book</a>
+                      <a onClick={handleEsummitClick} className="inwhite" role="button">Register Now</a>
+                    </>
+                  ) : (
+                    <>
+                      <a href={event.ruleBookLink} className="outwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
+                      <a href={event.registerLink} className="inwhite" target="_blank" rel="noopener noreferrer">Register Now</a>
+                    </>
+                  )}
 
               </div>
             </div>
