@@ -37,7 +37,7 @@ function Homeabout() {
               <div className="ableftbel">
                 <h3>Our Mission</h3>
                 <p>
-                  We aim to be the ecosystem  where we nurture entrepreneurial culture and unite innovators.
+                  We aim to be the ecosystem where we nurture entrepreneurial culture and unite innovators, empowering them to transform ideas into impactful realities.
                 </p>
               </div>
             </div>
@@ -65,7 +65,7 @@ function Homeabout() {
               <p>Footfall last year</p>
             </div>
             <div className="abox">
-              <h2>10</h2>
+              <h2>8</h2>
               <p>Events</p>
             </div>
             <div className="abox">

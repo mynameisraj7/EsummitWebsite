@@ -34,7 +34,7 @@ function Homefooter() {
                 <h2>Contact</h2>
                 <div className="contactcontent">
                 <div className="conleft">
-                  <h3>For accomodation queries</h3>
+                  <h3>For Accomodation queries</h3>
                   <div className="phonecont">
                      <i class='bx bx-phone'></i>
                      <p>+91 7011964796 (Yuvansh)</p>
