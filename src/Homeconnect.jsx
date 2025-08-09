@@ -14,8 +14,6 @@ function Homeconnect() {
     message: "",
   });
 
-  const [showToast, setShowToast] = useState(false);
-
   const [status, setStatus] = useState(""); // For showing feedback
 
   const handleChange = (e) => {
@@ -45,16 +43,11 @@ function Homeconnect() {
         
         // Check the status from the parsed response
         if (data.status === true) {
-    setStatus(""); // remove inline text if you don’t need it
-    setFormData({ name: "", email: "", subject: "", message: "" });
-
-    // Show toast
-    setShowToast(true);
-    setTimeout(() => setShowToast(false), 2500);
-} else {
-    setStatus("Failed to send message. Please try again.");
-}
-
+            setStatus("Message sent successfully!");
+            setFormData({ name: "", email: "", subject: "", message: "" });
+        } else {
+            setStatus("Failed to send message. Please try again.");
+        }
         
     } catch (error) {
         console.error('Error:', error);
@@ -77,9 +70,6 @@ function Homeconnect() {
 
   return (
     <>
-  {showToast && <div className="esummit-toast">✅ Submitted your request</div>}
-
-
     <section id="contact" className="conback">
          <div className="contitle" data-aos="fade-down">
           <h2>Connect with us</h2>
