@@ -1,8 +1,9 @@
 import "./Keyevents.css";
 import startupspotlight from "./assets/startspot.jpeg";
 import startupspace from "./assets/startspace.jpeg";
-import keyimage from "./assets/comingsoon.jpeg";
+// import keyimage from "./assets/comingsoon.jpeg";
 import braingame from "./assets/braingames.jpeg";
+import caseclash from "./assets/caseclash.jpeg";
 import { useEffect,useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -71,12 +72,12 @@ function Keyevents() {
     registerLink: "https://lu.ma/kpdbgsh7",
   },
   {
-    title: "Brand Strom",
-    date: "31st August 2025",
-    image:keyimage,
-    // ruleBookLink: "https://example.com/rulebook4.pdf",
-    // registerLink: "https://lu.ma/event/evt-Ghi789",
-    comingSoon:true,
+    title: "Case Clash",
+    date: "25th August 2025",
+    image:caseclash,
+    description:"Case Clash is where analytical minds meet strategic thinking! Tackle case studies from top companies, craft innovative solutions, and present your game-changing strategies to industry experts!",
+    ruleBookLink: "https://drive.google.com/drive/folders/1W6m4dHyoPRm8GXGgR3mOXKUvvH7cmDXX",
+    registerLink: "https://lu.ma/2vfojgem",
   },
 ];
 
@@ -112,20 +113,8 @@ function Keyevents() {
               <div className="card-back">
                 <h2>{event.title}</h2>
                 <p>{event.description}</p>
-                {/* <a href={event.ruleBookLink} className="outwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
-                <a href={event.registerLink} className="inwhite" target="_blank" rel="noopener noreferrer">Register Now</a> */}
-                 {event.comingSoon ? (
-                    <>
-                      <a onClick={handleEsummitClick} className="outwhite" role="button">Rule book</a>
-                      <a onClick={handleEsummitClick} className="inwhite" role="button">Register Now</a>
-                    </>
-                  ) : (
-                    <>
-                      <a href={event.ruleBookLink} className="outwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
-                      <a href={event.registerLink} className="inwhite" target="_blank" rel="noopener noreferrer">Register Now</a>
-                    </>
-                  )}
-
+                <a href={event.ruleBookLink} className="outwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
+                <a href={event.registerLink} className="inwhite" target="_blank" rel="noopener noreferrer">Register Now</a>
               </div>
             </div>
           </div>

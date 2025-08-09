@@ -25,7 +25,7 @@ function Homefooter() {
             </div>
             <div className="address">
                 <h2>Address</h2>
-                <p>Conference hall, PDUIIC,<br/>
+                <p>Ground Floor, PDUIIC,<br/>
                     GJUS&T, Hisar,<br/>
                     Haryana - 125001</p>
             </div>
@@ -34,7 +34,7 @@ function Homefooter() {
                 <h2>Contact</h2>
                 <div className="contactcontent">
                 <div className="conleft">
-                  <h3>For logistics and accomodation queries</h3>
+                  <h3>For accomodation queries</h3>
                   <div className="phonecont">
                      <i class='bx bx-phone'></i>
                      <p>+91 7011964796 (Yuvansh)</p>

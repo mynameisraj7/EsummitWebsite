@@ -2,6 +2,7 @@ import "./Allevents.css"
 import keyimage from "../assets/comingsoon.jpeg";
 import startupspotlight from "../assets/startspot.jpeg";
 import startupspace from "../assets/startspace.jpeg";
+import caseclash from "../assets/caseclash.jpeg";
 import braingame from "../assets/braingames.jpeg";
 import esummitlogo from "../assets/esummitlogo.png";
 import { useEffect,useState } from "react";
@@ -109,39 +110,43 @@ const toggleFlipRow2 = (index) => {
         registerLink: "https://lu.ma/kpdbgsh7",
       },
       {
-        title: "Tech Expo",
-        date: "31st August 2025",
-        image:keyimage,
-        // ruleBookLink: "https://example.com/rulebook4.pdf",
-        // registerLink: "https://lu.ma/event/evt-Ghi789",
-        comingSoon:true,
+        title: "Case Clash",
+            date: "25th August 2025",
+            image:caseclash,
+            description:"Case Clash is where analytical minds meet strategic thinking! Tackle case studies from top companies, craft innovative solutions, and present your game-changing strategies to industry experts!",
+            ruleBookLink: "https://drive.google.com/drive/folders/1W6m4dHyoPRm8GXGgR3mOXKUvvH7cmDXX",
+            registerLink: "https://lu.ma/2vfojgem",
       },
     ];
 
     const events2 = [
       {
-        title: "Startup Spotl",
-        date: "28th August 2025",
-        ruleBookLink: "https://example.com/rulebook1.pdf",
-        registerLink: "https://lu.ma/event/evt-5CxCjcLVGb938PV",
+        title: "Startup",
+        date: "25th August 2025",
+        // ruleBookLink: "https://example.com/rulebook1.pdf",
+        // registerLink: "https://lu.ma/event/evt-5CxCjcLVGb938PV",
+        comingSoon: true
       },
       {
-        title: "Ideat",
-        date: "29th August 2025",
-        ruleBookLink: "https://example.com/rulebook2.pdf",
-        registerLink: "https://lu.ma/event/evt-Abc123",
+        title: "Ideathon",
+        date: "25th August 2025",
+        // ruleBookLink: "https://example.com/rulebook2.pdf",
+        // registerLink: "https://lu.ma/event/evt-Abc123",
+        comingSoon: true
       },
       {
-        title: "P Parade",
-        date: "30th August 2025",
-        ruleBookLink: "https://example.com/rulebook3.pdf",
-        registerLink: "https://lu.ma/event/evt-Def456",
+        title: "Parade",
+        date: "25th August 2025",
+        // ruleBookLink: "https://example.com/rulebook3.pdf",
+        // registerLink: "https://lu.ma/event/evt-Def456",
+        comingSoon: true
       },
       {
         title: "Valid Event",
-        date: "31st August 2025",
-        ruleBookLink: "https://example.com/rulebook4.pdf",
-        registerLink: "https://lu.ma/event/evt-Ghi789",
+        date: "25th August 2025",
+        // ruleBookLink: "https://example.com/rulebook4.pdf",
+        // registerLink: "https://lu.ma/event/evt-Ghi789",
+        comingSoon: true
       },
     ];
 
@@ -220,31 +225,15 @@ const toggleFlipRow2 = (index) => {
               <div className="ccard-back">
                 <h2>{event.title}</h2>
                 <p>{event.description}</p>
-                {/* <a href={event.ruleBookLink} className="ooutwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
-                <a href={event.registerLink} className="iinwhite" target="_blank" rel="noopener noreferrer">Register Now</a> */}
-
-                   {event.comingSoon ? (
-    <>
-      <a onClick={handleEsummitClick} className="outwhite" role="button">Rule book</a>
-      <a onClick={handleEsummitClick} className="inwhite" role="button">Register Now</a>
-    </>
-  ) : (
-    <>
-      <a href={event.ruleBookLink} className="outwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
-      <a href={event.registerLink} className="inwhite" target="_blank" rel="noopener noreferrer">Register Now</a>
-    </>
-  )}
-
-
-
-
+                <a href={event.ruleBookLink} className="ooutwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
+                <a href={event.registerLink} className="iinwhite" target="_blank" rel="noopener noreferrer">Register Now</a>
               </div>
             </div>
           </div>
         ))}
       </div>
 
-        {/* <div className="ffourcardcontainer" data-aos="fade-right">
+        <div className="ffourcardcontainer" data-aos="fade-right">
         {events2.map((event, index) => (
           <div
             key={index}
@@ -262,16 +251,29 @@ const toggleFlipRow2 = (index) => {
               </div>
               <div className="ccard-back">
                 <h2>{event.title}</h2>
-                <p>
-                  Inviting students to bring forth impactful solutions to real-world problems, pitch them like entrepreneurs, and battle it out for recognition, rewards, and a chance to shine in front of seasoned experts.
-                </p>
-                <a href={event.ruleBookLink} className="ooutwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
-                <a href={event.registerLink} className="iinwhite" target="_blank" rel="noopener noreferrer">Register Now</a>
+                 <p>{event.description}</p>
+                {/* <a href={event.ruleBookLink} className="ooutwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
+                <a href={event.registerLink} className="iinwhite" target="_blank" rel="noopener noreferrer">Register Now</a> */}
+
+                  {event.comingSoon ? (
+    <>
+      <a onClick={handleEsummitClick} className="outwhite" role="button">Rule book</a>
+      <a onClick={handleEsummitClick} className="inwhite" role="button">Register Now</a>
+    </>
+  ) : (
+    <>
+      <a href={event.ruleBookLink} className="outwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
+      <a href={event.registerLink} className="inwhite" target="_blank" rel="noopener noreferrer">Register Now</a>
+    </>
+  )}
+
+
+
               </div>
             </div>
           </div>
         ))}
-        </div> */}
+        </div>
 
       </section>
     </>

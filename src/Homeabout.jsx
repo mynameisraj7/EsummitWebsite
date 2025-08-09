@@ -31,13 +31,13 @@ function Homeabout() {
               <div className="ableftup">
                 <h3>What is E-Summit ?</h3>
                 <p>
-                  E-Summit, the flagship event of GJUS&T Hisar, brings together visionaries, entrepreneurs, and changemakers to celebrate and cultivate innovation.
+                  E-Summit, the flagship event of GJUS&T Hisar, brings together visionay, entrepreneurs, and innovators to celebrate and cultivate innovation.
                 </p>
               </div>
               <div className="ableftbel">
                 <h3>Our Mission</h3>
                 <p>
-                  We aim to nurture entrepreneurial thinking, connect change-makers, and offer actionable insights into the startup ecosystem.
+                  We aim to be the ecosystem  where we nurture entrepreneurial culture and unite innovators.
                 </p>
               </div>
             </div>
