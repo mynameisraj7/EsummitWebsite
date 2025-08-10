@@ -233,7 +233,7 @@ const toggleFlipRow2 = (index) => {
         ))}
       </div>
 
-        <div className="ffourcardcontainer" data-aos="fade-right">
+        {/* <div className="ffourcardcontainer" data-aos="fade-right">
         {events2.map((event, index) => (
           <div
             key={index}
@@ -252,20 +252,20 @@ const toggleFlipRow2 = (index) => {
               <div className="ccard-back">
                 <h2>{event.title}</h2>
                  <p>{event.description}</p>
-                {/* <a href={event.ruleBookLink} className="ooutwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
-                <a href={event.registerLink} className="iinwhite" target="_blank" rel="noopener noreferrer">Register Now</a> */}
+                <a href={event.ruleBookLink} className="ooutwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
+                <a href={event.registerLink} className="iinwhite" target="_blank" rel="noopener noreferrer">Register Now</a>
 
-                  {event.comingSoon ? (
-    <>
-      <a onClick={handleEsummitClick} className="outwhite" role="button">Rule book</a>
-      <a onClick={handleEsummitClick} className="inwhite" role="button">Register Now</a>
-    </>
-  ) : (
-    <>
-      <a href={event.ruleBookLink} className="outwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
-      <a href={event.registerLink} className="inwhite" target="_blank" rel="noopener noreferrer">Register Now</a>
-    </>
-  )}
+                                {event.comingSoon ? (
+                  <>
+                    <a onClick={handleEsummitClick} className="outwhite" role="button">Rule book</a>
+                    <a onClick={handleEsummitClick} className="inwhite" role="button">Register Now</a>
+                  </>
+                ) : (
+                  <>
+                    <a href={event.ruleBookLink} className="outwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
+                    <a href={event.registerLink} className="inwhite" target="_blank" rel="noopener noreferrer">Register Now</a>
+                  </>
+                )}
 
 
 
@@ -273,7 +273,7 @@ const toggleFlipRow2 = (index) => {
             </div>
           </div>
         ))}
-        </div>
+        </div> */}
 
       </section>
     </>
