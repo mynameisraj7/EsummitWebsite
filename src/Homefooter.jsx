@@ -55,10 +55,10 @@ function Homefooter() {
                 </div>
                 <div className="conright">
                    <h3>For other queries</h3>
-                  <div className="phonecont">
+                  {/* <div className="phonecont">
                      <i class='bx bx-phone'></i>
                      <p>+91 9467905906 (Naina)</p>
-                  </div>
+                  </div> */}
                    <div className="phonecont">
                      <i class='bx bx-phone'></i>
                      <p>+91 6281482740 (Rohit)</p>
