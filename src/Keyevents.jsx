@@ -2,7 +2,7 @@ import "./Keyevents.css";
 import startupspotlight from "./assets/startspot.jpeg";
 import startupspace from "./assets/startspace.jpeg";
 // import keyimage from "./assets/comingsoon.jpeg";
-import braingame from "./assets/braingames.jpeg";
+import auction from "./assets/auction.jpeg";
 import caseclash from "./assets/caseclash.jpeg";
 import { useEffect,useState } from "react";
 import AOS from "aos";
@@ -64,12 +64,12 @@ function Keyevents() {
     registerLink: "https://unstop.com/p/startup-space-e-summit25-guru-jambheshwar-university-of-science-and-technology-hisar-haryana-1530197",
   },
   {
-    title: "Business Quiz",
-    date: "25th August 2025",
-    image:braingame,
-    description:"Put your business smarts to the test at the second edition of the Business Quiz at E-Summit 2025. Challenge yourself with two dynamic offline rounds covering startups, marketing, finance, and more.",
-    ruleBookLink: "https://drive.google.com/drive/folders/1UAcrhGRwqaoyJCGYze8hZJj4sDgUqKN0",
-    registerLink: "https://lu.ma/kpdbgsh7",
+    title: "Startup Auction",
+            date: "26th August 2025",
+            image:auction,
+            description:" Startup Auction is where sharp strategy meets entrepreneurial spirit! Bid for startups, acquire expert mentors, and build a winning portfolio — all while competing head-to-head in a high-energy environment! ",
+            ruleBookLink: "https://drive.google.com/drive/folders/12Sy2u64XXu2dFquV5dbsbMTk4gk_4mfR?usp=drive_link",
+            registerLink: "https://lu.ma/ir5o6a7d",
   },
   {
     title: "Case Clash",

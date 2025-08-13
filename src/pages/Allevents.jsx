@@ -3,6 +3,7 @@ import keyimage from "../assets/comingsoon.jpeg";
 import startupspotlight from "../assets/startspot.jpeg";
 import startupspace from "../assets/startspace.jpeg";
 import caseclash from "../assets/caseclash.jpeg";
+import influencer from "../assets/influencer.jpeg";
 import braingame from "../assets/braingames.jpeg";
 import auction from "../assets/auction.jpeg";
 import esummitlogo from "../assets/esummitlogo.png";
@@ -23,13 +24,7 @@ function Allevents() {
     }, 2500);
   };
 
-
-
-
-
-
     const [navOpen, setNavOpen] = useState(false);
-
     useEffect(() => {
     setNavOpen(false); // close on route change
   }, [location]);
@@ -102,13 +97,12 @@ const toggleFlipRow2 = (index) => {
             registerLink: "https://unstop.com/p/startup-space-e-summit25-guru-jambheshwar-university-of-science-and-technology-hisar-haryana-1530197",
       },
       {
-        title: "Business Quiz",
-        date: "27th August 2025",
-        image:keyimage,
-        image:braingame,
-        description:"Put your business smarts to the test at the second edition of the Business Quiz at E-Summit 2025. Challenge yourself with two dynamic offline rounds covering startups, marketing, finance, and more.",
-        ruleBookLink: "https://drive.google.com/drive/folders/1UAcrhGRwqaoyJCGYze8hZJj4sDgUqKN0",
-        registerLink: "https://lu.ma/kpdbgsh7",
+        title: "Startup Auction",
+        date: "26th August 2025",
+        image:auction,
+        description:" Startup Auction is where sharp strategy meets entrepreneurial spirit! Bid for startups, acquire expert mentors, and build a winning portfolio — all while competing head-to-head in a high-energy environment! ",
+        ruleBookLink: "https://drive.google.com/drive/folders/12Sy2u64XXu2dFquV5dbsbMTk4gk_4mfR?usp=drive_link",
+        registerLink: "https://lu.ma/ir5o6a7d",
       },
       {
         title: "Case Clash",
@@ -122,20 +116,21 @@ const toggleFlipRow2 = (index) => {
 
     const events2 = [
       {
-        title: "Startup Auction",
-        date: "26th August 2025",
-        image:auction,
-        description:" Startup Auction is where sharp strategy meets entrepreneurial spirit! Bid for startups, acquire expert mentors, and build a winning portfolio — all while competing head-to-head in a high-energy environment! ",
-        ruleBookLink: "https://drive.google.com/drive/folders/12Sy2u64XXu2dFquV5dbsbMTk4gk_4mfR?usp=drive_link",
-        registerLink: "https://lu.ma/ir5o6a7d",
+        
+        title: "Business Quiz",
+            date: "25th August 2025",
+            image:braingame,
+            description:"Put your business smarts to the test at the second edition of the Business Quiz at E-Summit 2025. Challenge yourself with two dynamic offline rounds covering startups, marketing, finance, and more.",
+            ruleBookLink: "https://drive.google.com/drive/folders/1UAcrhGRwqaoyJCGYze8hZJj4sDgUqKN0",
+            registerLink: "https://lu.ma/kpdbgsh7",
       },
       {
-        title: "Ideathon",
-        date: "25th August 2025",
-        image:keyimage,
-        // ruleBookLink: "https://example.com/rulebook2.pdf",
-        // registerLink: "https://lu.ma/event/evt-Abc123",
-        comingSoon: true
+        title: "Influencer's Lab",
+            date: "26th August 2025",
+            image:influencer,
+            description:"🎥 Light. Camera. Influence.Got 60 seconds to own your niche? ✨ Show off your creativity, storytelling, and influencer skills in the ultimate reel-making challenge! ",
+            ruleBookLink: "https://drive.google.com/drive/folders/19aiGtNHhJIM5bWdGVzjOFUzkr9NLQt_d?usp=drive_link",
+            registerLink: "https://lu.ma/3sd5fn68",
       },
       {
         title: "Parade",
