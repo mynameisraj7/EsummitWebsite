@@ -4,6 +4,7 @@ import startupspotlight from "../assets/startspot.jpeg";
 import startupspace from "../assets/startspace.jpeg";
 import caseclash from "../assets/caseclash.jpeg";
 import braingame from "../assets/braingames.jpeg";
+import auction from "../assets/auction.jpeg";
 import esummitlogo from "../assets/esummitlogo.png";
 import { useEffect,useState } from "react";
 import AOS from "aos";
@@ -121,15 +122,17 @@ const toggleFlipRow2 = (index) => {
 
     const events2 = [
       {
-        title: "Startup",
-        date: "25th August 2025",
-        // ruleBookLink: "https://example.com/rulebook1.pdf",
-        // registerLink: "https://lu.ma/event/evt-5CxCjcLVGb938PV",
-        comingSoon: true
+        title: "Startup Auction",
+        date: "26th August 2025",
+        image:auction,
+        description:" Startup Auction is where sharp strategy meets entrepreneurial spirit! Bid for startups, acquire expert mentors, and build a winning portfolio — all while competing head-to-head in a high-energy environment! ",
+        ruleBookLink: "https://drive.google.com/drive/folders/12Sy2u64XXu2dFquV5dbsbMTk4gk_4mfR?usp=drive_link",
+        registerLink: "https://lu.ma/ir5o6a7d",
       },
       {
         title: "Ideathon",
         date: "25th August 2025",
+        image:keyimage,
         // ruleBookLink: "https://example.com/rulebook2.pdf",
         // registerLink: "https://lu.ma/event/evt-Abc123",
         comingSoon: true
@@ -137,6 +140,7 @@ const toggleFlipRow2 = (index) => {
       {
         title: "Parade",
         date: "25th August 2025",
+        image:keyimage,
         // ruleBookLink: "https://example.com/rulebook3.pdf",
         // registerLink: "https://lu.ma/event/evt-Def456",
         comingSoon: true
@@ -144,6 +148,7 @@ const toggleFlipRow2 = (index) => {
       {
         title: "Valid Event",
         date: "25th August 2025",
+        image:keyimage,
         // ruleBookLink: "https://example.com/rulebook4.pdf",
         // registerLink: "https://lu.ma/event/evt-Ghi789",
         comingSoon: true
@@ -233,7 +238,7 @@ const toggleFlipRow2 = (index) => {
         ))}
       </div>
 
-        {/* <div className="ffourcardcontainer" data-aos="fade-right">
+        <div className="ffourcardcontainer" data-aos="fade-right">
         {events2.map((event, index) => (
           <div
             key={index}
@@ -242,7 +247,7 @@ const toggleFlipRow2 = (index) => {
           >
             <div className="ccard-inner">
               <div className="ccard-front">
-                <img src={keyimage} loading="lazy" />
+                <img src={event.image} loading="lazy" />
                 <h2>{event.title}</h2>
                 <div className="ssmallcardtext">
                   <p>{event.date}</p>
@@ -252,8 +257,8 @@ const toggleFlipRow2 = (index) => {
               <div className="ccard-back">
                 <h2>{event.title}</h2>
                  <p>{event.description}</p>
-                <a href={event.ruleBookLink} className="ooutwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
-                <a href={event.registerLink} className="iinwhite" target="_blank" rel="noopener noreferrer">Register Now</a>
+                {/* <a href={event.ruleBookLink} className="ooutwhite" target="_blank" rel="noopener noreferrer">Rule book</a>
+                <a href={event.registerLink} className="iinwhite" target="_blank" rel="noopener noreferrer">Register Now</a> */}
 
                                 {event.comingSoon ? (
                   <>
@@ -273,7 +278,7 @@ const toggleFlipRow2 = (index) => {
             </div>
           </div>
         ))}
-        </div> */}
+        </div>
 
       </section>
     </>
