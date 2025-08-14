@@ -82,7 +82,7 @@ const toggleFlipRow2 = (index) => {
       const events = [
       {
         title: "Startup Spotlight",
-        date: "27th August 2025",
+        date: "26th August 2025",
         image:startupspotlight,
             description:"A startup pitching competition where students present innovative ideas, pitch like entrepreneurs, and compete for recognition, rewards, and expert feedback at E-Summit ’25.",
             ruleBookLink: "https://drive.google.com/drive/folders/17-VHfysMSGAW12h3ioUXRk01vzeHPcSb?usp=drive_link",
@@ -90,7 +90,7 @@ const toggleFlipRow2 = (index) => {
       },
       {
         title: "Startup Space",
-        date: "27th August 2025",
+        date: "25th August 2025",
          image:startupspace,
             description:"Startup Space at E-Summit ’25 invites students to visually showcase their startup ideas, research, or prototypes—transforming bold concepts into stories that inform, impress, and inspire.",
             ruleBookLink: "https://drive.google.com/drive/folders/1s9zKPV_1rujPAw192zijRREI-ct6qZqg",
