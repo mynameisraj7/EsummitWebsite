@@ -1,9 +1,11 @@
 import "./Allevents.css"
-import keyimage from "../assets/comingsoon.jpeg";
+// import keyimage from "../assets/comingsoon.jpeg";
 import startupspotlight from "../assets/startspot.jpeg";
 import startupspace from "../assets/startspace.jpeg";
 import caseclash from "../assets/caseclash.jpeg";
 import influencer from "../assets/influencer.jpeg";
+import aman from "../assets/aman.jpeg";
+import yashika from "../assets/yashika.jpeg";
 import braingame from "../assets/braingames.jpeg";
 import auction from "../assets/auction.jpeg";
 import esummitlogo from "../assets/esummitlogo.png";
@@ -133,21 +135,29 @@ const toggleFlipRow2 = (index) => {
             registerLink: "https://lu.ma/3sd5fn68",
       },
       {
-        title: "Parade",
-        date: "25th August 2025",
-        image:keyimage,
-        // ruleBookLink: "https://example.com/rulebook3.pdf",
-        // registerLink: "https://lu.ma/event/evt-Def456",
-        comingSoon: true
+        title: "Session",
+            date: "26th August 2025",
+            image:aman,
+            description:"We are thrilled to host Mr. Aman Rajput, Community Manager at Unstop, for an insightful session on “Acceleration/Incubation – Opportunities for Students & Faculties Early-Stage Entrepreneurs”.",
+            ruleBookLink: "",
+            registerLink: "https://lu.ma/zjhkuopy",
       },
       {
-        title: "Valid Event",
-        date: "25th August 2025",
-        image:keyimage,
-        // ruleBookLink: "https://example.com/rulebook4.pdf",
-        // registerLink: "https://lu.ma/event/evt-Ghi789",
-        comingSoon: true
+        title: "Session",
+            date: "26th August 2025",
+            image:yashika,
+            description:"We are thrilled to host Ms. Yashika, Founder of YR IT Solutions, for an interactive session on “Innovation and Start-up Ecosystem Enablers.”",
+            ruleBookLink: "",
+            registerLink: "https://lu.ma/sicr5z51",
       },
+      // {
+      //   title: "Valid Event",
+      //   date: "25th August 2025",
+      //   image:keyimage,
+      //   ruleBookLink: "https://example.com/rulebook4.pdf",
+      //   registerLink: "https://lu.ma/event/evt-Ghi789",
+      //   comingSoon: true
+      // },
     ];
 
 
