@@ -9,6 +9,8 @@ import Homeconnect from './Homeconnect';
 import Faq from './Faq';
 import Homefooter from './Homefooter';
 import Moreevents from './pages/Moreevents';
+import { Analytics } from "@vercel/analytics/react";
+import { track } from "@vercel/analytics";
 
 function App() {
   const location = useLocation();
@@ -24,6 +26,7 @@ function App() {
         }, 100);
       }
     }
+     track("pageview", { path: location.pathname + location.search });
   }, [location]);
 
   return (
@@ -43,6 +46,7 @@ function App() {
         } />
         <Route path="/more-events" element={<Moreevents />} />
       </Routes>
+      <Analytics />
     </>
   );
 }
