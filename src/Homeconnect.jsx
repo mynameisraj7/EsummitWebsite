@@ -78,7 +78,7 @@ function Homeconnect() {
   return (
     <>
 
-    {showToast && <div className="esummit-toast">✅ Submitted your request</div>}
+    {showToast && <div className="konark-toast">✅ Submitted your request</div>}
 
 
     <section id="contact" className="conback">
